@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F01F600171819E30005C95F /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F01F5FF171819E30005C95F /* Tag.m */; };
+		EA70251816EA08600019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
+		EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251916EA08600019D97B /* Foundation.framework */; };
+		EA70251C16EA08600019D97B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251B16EA08600019D97B /* CoreGraphics.framework */; };
+		EA70252216EA08600019D97B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70252016EA08600019D97B /* InfoPlist.strings */; };
+		EA70252416EA08600019D97B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70252316EA08600019D97B /* main.m */; };
+		EA70252816EA08600019D97B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70252716EA08600019D97B /* AppDelegate.m */; };
+		EA70252A16EA08600019D97B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252916EA08600019D97B /* Default.png */; };
+		EA70252C16EA08600019D97B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252B16EA08600019D97B /* Default@2x.png */; };
+		EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252D16EA08600019D97B /* Default-568h@2x.png */; };
+		EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70252F16EA08600019D97B /* MainStoryboard.storyboard */; };
+		EA70253416EA08600019D97B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70253316EA08600019D97B /* ViewController.m */; };
+		EA70253C16EA08610019D97B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70253B16EA08610019D97B /* SenTestingKit.framework */; };
+		EA70253D16EA08610019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
+		EA70253E16EA08610019D97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251916EA08600019D97B /* Foundation.framework */; };
+		EA70254616EA08610019D97B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70254416EA08610019D97B /* InfoPlist.strings */; };
+		EA70254916EA08610019D97B /* Tag_to_TapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70254816EA08610019D97B /* Tag_to_TapTests.m */; };
+		EA7ACDAB170C3995006979E7 /* TakePicController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7ACDAA170C3995006979E7 /* TakePicController.m */; };
+		EA7ACDAE170C406A006979E7 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7ACDAD170C406A006979E7 /* ParentViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA70253F16EA08610019D97B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA70250C16EA08600019D97B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA70251316EA08600019D97B;
+			remoteInfo = "Tag to Tap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F01F5FE171819E30005C95F /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		3F01F5FF171819E30005C95F /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		EA70251416EA08600019D97B /* Tag to Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag to Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA70251716EA08600019D97B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA70251916EA08600019D97B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA70251B16EA08600019D97B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA70251F16EA08600019D97B /* Tag to Tap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tag to Tap-Info.plist"; sourceTree = "<group>"; };
+		EA70252116EA08600019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA70252316EA08600019D97B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA70252516EA08600019D97B /* Tag to Tap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tag to Tap-Prefix.pch"; sourceTree = "<group>"; };
+		EA70252616EA08600019D97B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA70252716EA08600019D97B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA70252916EA08600019D97B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EA70252B16EA08600019D97B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EA70252D16EA08600019D97B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA70253016EA08600019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EA70253216EA08600019D97B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA70253316EA08600019D97B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA70253A16EA08610019D97B /* Tag to TapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tag to TapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA70253B16EA08610019D97B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA70254316EA08610019D97B /* Tag to TapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tag to TapTests-Info.plist"; sourceTree = "<group>"; };
+		EA70254516EA08610019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA70254716EA08610019D97B /* Tag_to_TapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tag_to_TapTests.h; sourceTree = "<group>"; };
+		EA70254816EA08610019D97B /* Tag_to_TapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tag_to_TapTests.m; sourceTree = "<group>"; };
+		EA7ACDA9170C3995006979E7 /* TakePicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePicController.h; sourceTree = "<group>"; };
+		EA7ACDAA170C3995006979E7 /* TakePicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePicController.m; sourceTree = "<group>"; };
+		EA7ACDAC170C406A006979E7 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentViewController.h; path = ../ParentViewController.h; sourceTree = "<group>"; };
+		EA7ACDAD170C406A006979E7 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentViewController.m; path = ../ParentViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA70251116EA08600019D97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70251816EA08600019D97B /* UIKit.framework in Frameworks */,
+				EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */,
+				EA70251C16EA08600019D97B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253616EA08610019D97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70253C16EA08610019D97B /* SenTestingKit.framework in Frameworks */,
+				EA70253D16EA08610019D97B /* UIKit.framework in Frameworks */,
+				EA70253E16EA08610019D97B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA70250B16EA08600019D97B = {
+			isa = PBXGroup;
+			children = (
+				EA70251D16EA08600019D97B /* Tag to Tap */,
+				EA70254116EA08610019D97B /* Tag to TapTests */,
+				EA70251616EA08600019D97B /* Frameworks */,
+				EA70251516EA08600019D97B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA70251516EA08600019D97B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA70251416EA08600019D97B /* Tag to Tap.app */,
+				EA70253A16EA08610019D97B /* Tag to TapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA70251616EA08600019D97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA70251716EA08600019D97B /* UIKit.framework */,
+				EA70251916EA08600019D97B /* Foundation.framework */,
+				EA70251B16EA08600019D97B /* CoreGraphics.framework */,
+				EA70253B16EA08610019D97B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA70251D16EA08600019D97B /* Tag to Tap */ = {
+			isa = PBXGroup;
+			children = (
+				EA7ACDAC170C406A006979E7 /* ParentViewController.h */,
+				EA7ACDAD170C406A006979E7 /* ParentViewController.m */,
+				EA7ACDA9170C3995006979E7 /* TakePicController.h */,
+				EA7ACDAA170C3995006979E7 /* TakePicController.m */,
+				EA70252616EA08600019D97B /* AppDelegate.h */,
+				EA70252716EA08600019D97B /* AppDelegate.m */,
+				EA70252F16EA08600019D97B /* MainStoryboard.storyboard */,
+				EA70253216EA08600019D97B /* ViewController.h */,
+				EA70253316EA08600019D97B /* ViewController.m */,
+				EA70251E16EA08600019D97B /* Supporting Files */,
+				3F01F5FE171819E30005C95F /* Tag.h */,
+				3F01F5FF171819E30005C95F /* Tag.m */,
+			);
+			path = "Tag to Tap";
+			sourceTree = "<group>";
+		};
+		EA70251E16EA08600019D97B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA70251F16EA08600019D97B /* Tag to Tap-Info.plist */,
+				EA70252016EA08600019D97B /* InfoPlist.strings */,
+				EA70252316EA08600019D97B /* main.m */,
+				EA70252516EA08600019D97B /* Tag to Tap-Prefix.pch */,
+				EA70252916EA08600019D97B /* Default.png */,
+				EA70252B16EA08600019D97B /* Default@2x.png */,
+				EA70252D16EA08600019D97B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA70254116EA08610019D97B /* Tag to TapTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA70254716EA08610019D97B /* Tag_to_TapTests.h */,
+				EA70254816EA08610019D97B /* Tag_to_TapTests.m */,
+				EA70254216EA08610019D97B /* Supporting Files */,
+			);
+			path = "Tag to TapTests";
+			sourceTree = "<group>";
+		};
+		EA70254216EA08610019D97B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA70254316EA08610019D97B /* Tag to TapTests-Info.plist */,
+				EA70254416EA08610019D97B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA70251316EA08600019D97B /* Tag to Tap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70254C16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to Tap" */;
+			buildPhases = (
+				EA70251016EA08600019D97B /* Sources */,
+				EA70251116EA08600019D97B /* Frameworks */,
+				EA70251216EA08600019D97B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tag to Tap";
+			productName = "Tag to Tap";
+			productReference = EA70251416EA08600019D97B /* Tag to Tap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA70253916EA08610019D97B /* Tag to TapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70254F16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to TapTests" */;
+			buildPhases = (
+				EA70253516EA08610019D97B /* Sources */,
+				EA70253616EA08610019D97B /* Frameworks */,
+				EA70253716EA08610019D97B /* Resources */,
+				EA70253816EA08610019D97B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA70254016EA08610019D97B /* PBXTargetDependency */,
+			);
+			name = "Tag to TapTests";
+			productName = "Tag to TapTests";
+			productReference = EA70253A16EA08610019D97B /* Tag to TapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA70250C16EA08600019D97B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Itopia;
+			};
+			buildConfigurationList = EA70250F16EA08600019D97B /* Build configuration list for PBXProject "Tag to Tap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA70250B16EA08600019D97B;
+			productRefGroup = EA70251516EA08600019D97B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA70251316EA08600019D97B /* Tag to Tap */,
+				EA70253916EA08610019D97B /* Tag to TapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA70251216EA08600019D97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70252216EA08600019D97B /* InfoPlist.strings in Resources */,
+				EA70252A16EA08600019D97B /* Default.png in Resources */,
+				EA70252C16EA08600019D97B /* Default@2x.png in Resources */,
+				EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */,
+				EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253716EA08610019D97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70254616EA08610019D97B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA70253816EA08610019D97B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA70251016EA08600019D97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70252416EA08600019D97B /* main.m in Sources */,
+				EA70252816EA08600019D97B /* AppDelegate.m in Sources */,
+				EA70253416EA08600019D97B /* ViewController.m in Sources */,
+				EA7ACDAB170C3995006979E7 /* TakePicController.m in Sources */,
+				EA7ACDAE170C406A006979E7 /* ParentViewController.m in Sources */,
+				3F01F600171819E30005C95F /* Tag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253516EA08610019D97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70254916EA08610019D97B /* Tag_to_TapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA70254016EA08610019D97B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA70251316EA08600019D97B /* Tag to Tap */;
+			targetProxy = EA70253F16EA08610019D97B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA70252016EA08600019D97B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70252116EA08600019D97B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA70252F16EA08600019D97B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70253016EA08600019D97B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		EA70254416EA08610019D97B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70254516EA08610019D97B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA70254A16EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EA70254B16EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA70254D16EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to Tap/Tag to Tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA70254E16EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to Tap/Tag to Tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA70255016EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag to Tap.app/Tag to Tap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to TapTests/Tag to TapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EA70255116EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag to Tap.app/Tag to Tap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to TapTests/Tag to TapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA70250F16EA08600019D97B /* Build configuration list for PBXProject "Tag to Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70254A16EA08610019D97B /* Debug */,
+				EA70254B16EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70254C16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70254D16EA08610019D97B /* Debug */,
+				EA70254E16EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70254F16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to TapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70255016EA08610019D97B /* Debug */,
+				EA70255116EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA70250C16EA08600019D97B /* Project object */;
+}

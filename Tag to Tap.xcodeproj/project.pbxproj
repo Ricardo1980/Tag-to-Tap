@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8EBB09171FEF3000B016AC /* StaticData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EBB08171FEF3000B016AC /* StaticData.m */; };
+		3FAB78EA171EC3420059F29C /* TaggedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB78E9171EC3420059F29C /* TaggedImage.m */; };
+		3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */; };
+		3FDCE4B8172A9B3E00E15A6D /* TagGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */; };
+		EA2BD8A1171E973900ABEC26 /* app icon bureaublad default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */; };
+		EA2BD8A3171E97D200ABEC26 /* app icon bureaublad retina.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */; };
+		EA2BD8A5171E987000ABEC26 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */; };
+		EA2BD8A7171E993E00ABEC26 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */; };
+		EA2BD8B4171E9FC400ABEC26 /* ChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */; };
+		EA2BD8B7171EA2A700ABEC26 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B6171EA2A700ABEC26 /* ParentViewController.m */; };
+		EA2BD8BA171EA40100ABEC26 /* EditPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B9171EA40100ABEC26 /* EditPicViewController.m */; };
+		EA2BD8BD171EAC7400ABEC26 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8BC171EAC7400ABEC26 /* Tag.m */; };
+		EA2BD8BF171EAD0E00ABEC26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */; };
+		EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C85173CF0250017EBC8 /* recordButton.png */; };
+		EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */; };
+		EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C88173CF9C90017EBC8 /* stopButton.png */; };
+		EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */; };
+		EA6D8CAF171F29C800395607 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CAE171F29C800395607 /* playButton.png */; };
+		EA6D8CB3171F2BB600395607 /* ?buttong.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB2171F2BB600395607 /* ?buttong.png */; };
+		EA6D8CB5171F2CA200395607 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB4171F2CA200395607 /* BackButton.png */; };
+		EA6D8CB8171F2D6D00395607 /* takePicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB6171F2D6D00395607 /* takePicButton.png */; };
+		EA6D8CB9171F2D6D00395607 /* editPicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB7171F2D6D00395607 /* editPicButton.png */; };
+		EA6D8CBC171F2E8400395607 /* PhotoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBA171F2E8400395607 /* PhotoButton.png */; };
+		EA6D8CBD171F2E8400395607 /* yesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBB171F2E8400395607 /* yesButton.png */; };
+		EA6D8CBF171F2F2D00395607 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBE171F2F2D00395607 /* bar.png */; };
+		EA6D8CC1171F30F300395607 /* adultsButton .png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CC0171F30F300395607 /* adultsButton .png */; };
+		EA6D8CC3171F364E00395607 /* faddedBackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CC2171F364E00395607 /* faddedBackgroud.png */; };
+		EA70251816EA08600019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
+		EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251916EA08600019D97B /* Foundation.framework */; };
+		EA70251C16EA08600019D97B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251B16EA08600019D97B /* CoreGraphics.framework */; };
+		EA70252216EA08600019D97B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70252016EA08600019D97B /* InfoPlist.strings */; };
+		EA70252416EA08600019D97B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70252316EA08600019D97B /* main.m */; };
+		EA70252816EA08600019D97B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70252716EA08600019D97B /* AppDelegate.m */; };
+		EA70252A16EA08600019D97B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252916EA08600019D97B /* Default.png */; };
+		EA70252C16EA08600019D97B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252B16EA08600019D97B /* Default@2x.png */; };
+		EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252D16EA08600019D97B /* Default-568h@2x.png */; };
+		EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70252F16EA08600019D97B /* MainStoryboard.storyboard */; };
+		EA70253416EA08600019D97B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70253316EA08600019D97B /* ViewController.m */; };
+		EA70253C16EA08610019D97B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70253B16EA08610019D97B /* SenTestingKit.framework */; };
+		EA70253D16EA08610019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
+		EA70253E16EA08610019D97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251916EA08600019D97B /* Foundation.framework */; };
+		EA70254616EA08610019D97B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70254416EA08610019D97B /* InfoPlist.strings */; };
+		EA70254916EA08610019D97B /* Tag_to_TapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70254816EA08610019D97B /* Tag_to_TapTests.m */; };
+		EA7ACDAB170C3995006979E7 /* TakePicController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7ACDAA170C3995006979E7 /* TakePicController.m */; };
+		EAA4B80C172159AF00635FE7 /* StartTaggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */; };
+		EAEF5C0117204A2E001AB967 /* startTagingBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0017204A2E001AB967 /* startTagingBar.png */; };
+		EAEF5C0317204A36001AB967 /* no?Button.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0217204A36001AB967 /* no?Button.png */; };
+		EAEF5C0517204BA2001AB967 /* spellOutBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0417204BA2001AB967 /* spellOutBar.png */; };
+		EAEF5C0817204EED001AB967 /* choosePictureBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0617204EED001AB967 /* choosePictureBar.png */; };
+		EAEF5C0917204EED001AB967 /* exitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0717204EED001AB967 /* exitButton.png */; };
+		EAEF5C0C17205253001AB967 /* tagGameButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0A17205252001AB967 /* tagGameButton.png */; };
+		EAEF5C0D17205253001AB967 /* guessWhatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0B17205252001AB967 /* guessWhatButton.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA70253F16EA08610019D97B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA70250C16EA08600019D97B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA70251316EA08600019D97B;
+			remoteInfo = "Tag to Tap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8EBB07171FEF3000B016AC /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticData.h; sourceTree = "<group>"; };
+		3F8EBB08171FEF3000B016AC /* StaticData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticData.m; sourceTree = "<group>"; };
+		3FAB78E8171EC3420059F29C /* TaggedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedImage.h; sourceTree = "<group>"; };
+		3FAB78E9171EC3420059F29C /* TaggedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedImage.m; sourceTree = "<group>"; };
+		3FDCE4B317293CC500E15A6D /* chooseTaggedPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chooseTaggedPicViewController.h; sourceTree = "<group>"; };
+		3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseTaggedPicViewController.m; sourceTree = "<group>"; };
+		3FDCE4B6172A9B3C00E15A6D /* TagGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagGameViewController.h; sourceTree = "<group>"; };
+		3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagGameViewController.m; sourceTree = "<group>"; };
+		EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad default.png"; sourceTree = "<group>"; };
+		EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad retina.png"; sourceTree = "<group>"; };
+		EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		EA2BD8B2171E9FC400ABEC26 /* ChildrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildrenViewController.h; path = ../ChildrenViewController.h; sourceTree = "<group>"; };
+		EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildrenViewController.m; path = ../ChildrenViewController.m; sourceTree = "<group>"; };
+		EA2BD8B5171EA2A700ABEC26 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		EA2BD8B6171EA2A700ABEC26 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		EA2BD8B8171EA40100ABEC26 /* EditPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPicViewController.h; sourceTree = "<group>"; };
+		EA2BD8B9171EA40100ABEC26 /* EditPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPicViewController.m; sourceTree = "<group>"; };
+		EA2BD8BB171EAC7400ABEC26 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		EA2BD8BC171EAC7400ABEC26 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA4E6C85173CF0250017EBC8 /* recordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton.png; sourceTree = "<group>"; };
+		EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtonRec.png; sourceTree = "<group>"; };
+		EA4E6C88173CF9C90017EBC8 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
+		EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameBar.png; sourceTree = "<group>"; };
+		EA6D8CAE171F29C800395607 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		EA6D8CB2171F2BB600395607 /* ?buttong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "?buttong.png"; sourceTree = "<group>"; };
+		EA6D8CB4171F2CA200395607 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		EA6D8CB6171F2D6D00395607 /* takePicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takePicButton.png; sourceTree = "<group>"; };
+		EA6D8CB7171F2D6D00395607 /* editPicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editPicButton.png; sourceTree = "<group>"; };
+		EA6D8CBA171F2E8400395607 /* PhotoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhotoButton.png; sourceTree = "<group>"; };
+		EA6D8CBB171F2E8400395607 /* yesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesButton.png; sourceTree = "<group>"; };
+		EA6D8CBE171F2F2D00395607 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		EA6D8CC0171F30F300395607 /* adultsButton .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adultsButton .png"; sourceTree = "<group>"; };
+		EA6D8CC2171F364E00395607 /* faddedBackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faddedBackgroud.png; sourceTree = "<group>"; };
+		EA70251416EA08600019D97B /* Tag to Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag to Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA70251716EA08600019D97B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA70251916EA08600019D97B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA70251B16EA08600019D97B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA70251F16EA08600019D97B /* Tag to Tap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tag to Tap-Info.plist"; sourceTree = "<group>"; };
+		EA70252116EA08600019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA70252316EA08600019D97B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA70252516EA08600019D97B /* Tag to Tap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tag to Tap-Prefix.pch"; sourceTree = "<group>"; };
+		EA70252616EA08600019D97B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA70252716EA08600019D97B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA70252916EA08600019D97B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EA70252B16EA08600019D97B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EA70252D16EA08600019D97B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA70253016EA08600019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EA70253216EA08600019D97B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA70253316EA08600019D97B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA70253A16EA08610019D97B /* Tag to TapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tag to TapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA70253B16EA08610019D97B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA70254316EA08610019D97B /* Tag to TapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tag to TapTests-Info.plist"; sourceTree = "<group>"; };
+		EA70254516EA08610019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA70254716EA08610019D97B /* Tag_to_TapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tag_to_TapTests.h; sourceTree = "<group>"; };
+		EA70254816EA08610019D97B /* Tag_to_TapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tag_to_TapTests.m; sourceTree = "<group>"; };
+		EA7ACDA9170C3995006979E7 /* TakePicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePicController.h; sourceTree = "<group>"; };
+		EA7ACDAA170C3995006979E7 /* TakePicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePicController.m; sourceTree = "<group>"; };
+		EAA4B80A172159AF00635FE7 /* StartTaggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTaggingViewController.h; sourceTree = "<group>"; };
+		EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTaggingViewController.m; sourceTree = "<group>"; };
+		EAEF5C0017204A2E001AB967 /* startTagingBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startTagingBar.png; sourceTree = "<group>"; };
+		EAEF5C0217204A36001AB967 /* no?Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no?Button.png"; sourceTree = "<group>"; };
+		EAEF5C0417204BA2001AB967 /* spellOutBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellOutBar.png; sourceTree = "<group>"; };
+		EAEF5C0617204EED001AB967 /* choosePictureBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choosePictureBar.png; sourceTree = "<group>"; };
+		EAEF5C0717204EED001AB967 /* exitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitButton.png; sourceTree = "<group>"; };
+		EAEF5C0A17205252001AB967 /* tagGameButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameButton.png; sourceTree = "<group>"; };
+		EAEF5C0B17205252001AB967 /* guessWhatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guessWhatButton.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA70251116EA08600019D97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2BD8BF171EAD0E00ABEC26 /* AVFoundation.framework in Frameworks */,
+				EA70251816EA08600019D97B /* UIKit.framework in Frameworks */,
+				EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */,
+				EA70251C16EA08600019D97B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253616EA08610019D97B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70253C16EA08610019D97B /* SenTestingKit.framework in Frameworks */,
+				EA70253D16EA08610019D97B /* UIKit.framework in Frameworks */,
+				EA70253E16EA08610019D97B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2BD8A8171E997900ABEC26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */,
+				EA6D8CB2171F2BB600395607 /* ?buttong.png */,
+				EA6D8CBA171F2E8400395607 /* PhotoButton.png */,
+				EA6D8CBB171F2E8400395607 /* yesButton.png */,
+				EAEF5C0017204A2E001AB967 /* startTagingBar.png */,
+				EAEF5C0217204A36001AB967 /* no?Button.png */,
+				EA4E6C85173CF0250017EBC8 /* recordButton.png */,
+				EAEF5C0417204BA2001AB967 /* spellOutBar.png */,
+				EAEF5C0A17205252001AB967 /* tagGameButton.png */,
+				EAEF5C0B17205252001AB967 /* guessWhatButton.png */,
+				EA6D8CAE171F29C800395607 /* playButton.png */,
+				EA6D8CC2171F364E00395607 /* faddedBackgroud.png */,
+				EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */,
+				EA4E6C88173CF9C90017EBC8 /* stopButton.png */,
+				EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */,
+				EA6D8CC0171F30F300395607 /* adultsButton .png */,
+				EAEF5C0617204EED001AB967 /* choosePictureBar.png */,
+				EAEF5C0717204EED001AB967 /* exitButton.png */,
+				EA6D8CBE171F2F2D00395607 /* bar.png */,
+				EA6D8CB4171F2CA200395607 /* BackButton.png */,
+				EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */,
+				EA6D8CB6171F2D6D00395607 /* takePicButton.png */,
+				EA6D8CB7171F2D6D00395607 /* editPicButton.png */,
+				EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */,
+				EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EA70250B16EA08600019D97B = {
+			isa = PBXGroup;
+			children = (
+				EA2BD8A8171E997900ABEC26 /* Images */,
+				EA70251D16EA08600019D97B /* Tag to Tap */,
+				EA70254116EA08610019D97B /* Tag to TapTests */,
+				EA70251616EA08600019D97B /* Frameworks */,
+				EA70251516EA08600019D97B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA70251516EA08600019D97B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA70251416EA08600019D97B /* Tag to Tap.app */,
+				EA70253A16EA08610019D97B /* Tag to TapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA70251616EA08600019D97B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */,
+				EA70251716EA08600019D97B /* UIKit.framework */,
+				EA70251916EA08600019D97B /* Foundation.framework */,
+				EA70251B16EA08600019D97B /* CoreGraphics.framework */,
+				EA70253B16EA08610019D97B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA70251D16EA08600019D97B /* Tag to Tap */ = {
+			isa = PBXGroup;
+			children = (
+				EA70252F16EA08600019D97B /* MainStoryboard.storyboard */,
+				EA70252616EA08600019D97B /* AppDelegate.h */,
+				EA70252716EA08600019D97B /* AppDelegate.m */,
+				EA70253216EA08600019D97B /* ViewController.h */,
+				EA70253316EA08600019D97B /* ViewController.m */,
+				EA2BD8B5171EA2A700ABEC26 /* ParentViewController.h */,
+				EA2BD8B6171EA2A700ABEC26 /* ParentViewController.m */,
+				EA7ACDA9170C3995006979E7 /* TakePicController.h */,
+				EA7ACDAA170C3995006979E7 /* TakePicController.m */,
+				EAA4B80A172159AF00635FE7 /* StartTaggingViewController.h */,
+				EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */,
+				EA2BD8B8171EA40100ABEC26 /* EditPicViewController.h */,
+				EA2BD8B9171EA40100ABEC26 /* EditPicViewController.m */,
+				3FDCE4B317293CC500E15A6D /* chooseTaggedPicViewController.h */,
+				3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */,
+				EA2BD8B2171E9FC400ABEC26 /* ChildrenViewController.h */,
+				EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */,
+				3FDCE4B6172A9B3C00E15A6D /* TagGameViewController.h */,
+				3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */,
+				3F8EBB07171FEF3000B016AC /* StaticData.h */,
+				3F8EBB08171FEF3000B016AC /* StaticData.m */,
+				3FAB78E8171EC3420059F29C /* TaggedImage.h */,
+				3FAB78E9171EC3420059F29C /* TaggedImage.m */,
+				EA2BD8BB171EAC7400ABEC26 /* Tag.h */,
+				EA2BD8BC171EAC7400ABEC26 /* Tag.m */,
+				EA70251E16EA08600019D97B /* Supporting Files */,
+			);
+			path = "Tag to Tap";
+			sourceTree = "<group>";
+		};
+		EA70251E16EA08600019D97B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA70251F16EA08600019D97B /* Tag to Tap-Info.plist */,
+				EA70252016EA08600019D97B /* InfoPlist.strings */,
+				EA70252316EA08600019D97B /* main.m */,
+				EA70252516EA08600019D97B /* Tag to Tap-Prefix.pch */,
+				EA70252916EA08600019D97B /* Default.png */,
+				EA70252B16EA08600019D97B /* Default@2x.png */,
+				EA70252D16EA08600019D97B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA70254116EA08610019D97B /* Tag to TapTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA70254716EA08610019D97B /* Tag_to_TapTests.h */,
+				EA70254816EA08610019D97B /* Tag_to_TapTests.m */,
+				EA70254216EA08610019D97B /* Supporting Files */,
+			);
+			path = "Tag to TapTests";
+			sourceTree = "<group>";
+		};
+		EA70254216EA08610019D97B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA70254316EA08610019D97B /* Tag to TapTests-Info.plist */,
+				EA70254416EA08610019D97B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA70251316EA08600019D97B /* Tag to Tap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70254C16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to Tap" */;
+			buildPhases = (
+				EA70251016EA08600019D97B /* Sources */,
+				EA70251116EA08600019D97B /* Frameworks */,
+				EA70251216EA08600019D97B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tag to Tap";
+			productName = "Tag to Tap";
+			productReference = EA70251416EA08600019D97B /* Tag to Tap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA70253916EA08610019D97B /* Tag to TapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70254F16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to TapTests" */;
+			buildPhases = (
+				EA70253516EA08610019D97B /* Sources */,
+				EA70253616EA08610019D97B /* Frameworks */,
+				EA70253716EA08610019D97B /* Resources */,
+				EA70253816EA08610019D97B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA70254016EA08610019D97B /* PBXTargetDependency */,
+			);
+			name = "Tag to TapTests";
+			productName = "Tag to TapTests";
+			productReference = EA70253A16EA08610019D97B /* Tag to TapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA70250C16EA08600019D97B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Itopia;
+			};
+			buildConfigurationList = EA70250F16EA08600019D97B /* Build configuration list for PBXProject "Tag to Tap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA70250B16EA08600019D97B;
+			productRefGroup = EA70251516EA08600019D97B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA70251316EA08600019D97B /* Tag to Tap */,
+				EA70253916EA08610019D97B /* Tag to TapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA70251216EA08600019D97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70252216EA08600019D97B /* InfoPlist.strings in Resources */,
+				EA70252A16EA08600019D97B /* Default.png in Resources */,
+				EA70252C16EA08600019D97B /* Default@2x.png in Resources */,
+				EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */,
+				EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */,
+				EA2BD8A1171E973900ABEC26 /* app icon bureaublad default.png in Resources */,
+				EA2BD8A3171E97D200ABEC26 /* app icon bureaublad retina.png in Resources */,
+				EA2BD8A5171E987000ABEC26 /* Default-Landscape~ipad.png in Resources */,
+				EA2BD8A7171E993E00ABEC26 /* Default-Landscape@2x~ipad.png in Resources */,
+				EA6D8CAF171F29C800395607 /* playButton.png in Resources */,
+				EA6D8CB3171F2BB600395607 /* ?buttong.png in Resources */,
+				EA6D8CB5171F2CA200395607 /* BackButton.png in Resources */,
+				EA6D8CB8171F2D6D00395607 /* takePicButton.png in Resources */,
+				EA6D8CB9171F2D6D00395607 /* editPicButton.png in Resources */,
+				EA6D8CBC171F2E8400395607 /* PhotoButton.png in Resources */,
+				EA6D8CBD171F2E8400395607 /* yesButton.png in Resources */,
+				EA6D8CBF171F2F2D00395607 /* bar.png in Resources */,
+				EA6D8CC1171F30F300395607 /* adultsButton .png in Resources */,
+				EA6D8CC3171F364E00395607 /* faddedBackgroud.png in Resources */,
+				EAEF5C0117204A2E001AB967 /* startTagingBar.png in Resources */,
+				EAEF5C0317204A36001AB967 /* no?Button.png in Resources */,
+				EAEF5C0517204BA2001AB967 /* spellOutBar.png in Resources */,
+				EAEF5C0817204EED001AB967 /* choosePictureBar.png in Resources */,
+				EAEF5C0917204EED001AB967 /* exitButton.png in Resources */,
+				EAEF5C0C17205253001AB967 /* tagGameButton.png in Resources */,
+				EAEF5C0D17205253001AB967 /* guessWhatButton.png in Resources */,
+				EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */,
+				EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */,
+				EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */,
+				EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253716EA08610019D97B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70254616EA08610019D97B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA70253816EA08610019D97B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA70251016EA08600019D97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70252416EA08600019D97B /* main.m in Sources */,
+				EA70252816EA08600019D97B /* AppDelegate.m in Sources */,
+				EA70253416EA08600019D97B /* ViewController.m in Sources */,
+				EA7ACDAB170C3995006979E7 /* TakePicController.m in Sources */,
+				EA2BD8B4171E9FC400ABEC26 /* ChildrenViewController.m in Sources */,
+				EA2BD8B7171EA2A700ABEC26 /* ParentViewController.m in Sources */,
+				EA2BD8BA171EA40100ABEC26 /* EditPicViewController.m in Sources */,
+				EA2BD8BD171EAC7400ABEC26 /* Tag.m in Sources */,
+				3FAB78EA171EC3420059F29C /* TaggedImage.m in Sources */,
+				3F8EBB09171FEF3000B016AC /* StaticData.m in Sources */,
+				EAA4B80C172159AF00635FE7 /* StartTaggingViewController.m in Sources */,
+				3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */,
+				3FDCE4B8172A9B3E00E15A6D /* TagGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA70253516EA08610019D97B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70254916EA08610019D97B /* Tag_to_TapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA70254016EA08610019D97B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA70251316EA08600019D97B /* Tag to Tap */;
+			targetProxy = EA70253F16EA08610019D97B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA70252016EA08600019D97B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70252116EA08600019D97B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA70252F16EA08600019D97B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70253016EA08600019D97B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		EA70254416EA08610019D97B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70254516EA08610019D97B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA70254A16EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EA70254B16EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA70254D16EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to Tap/Tag to Tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA70254E16EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to Tap/Tag to Tap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA70255016EA08610019D97B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag to Tap.app/Tag to Tap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to TapTests/Tag to TapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EA70255116EA08610019D97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag to Tap.app/Tag to Tap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tag to Tap/Tag to Tap-Prefix.pch";
+				INFOPLIST_FILE = "Tag to TapTests/Tag to TapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA70250F16EA08600019D97B /* Build configuration list for PBXProject "Tag to Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70254A16EA08610019D97B /* Debug */,
+				EA70254B16EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70254C16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to Tap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70254D16EA08610019D97B /* Debug */,
+				EA70254E16EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70254F16EA08610019D97B /* Build configuration list for PBXNativeTarget "Tag to TapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70255016EA08610019D97B /* Debug */,
+				EA70255116EA08610019D97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA70250C16EA08600019D97B /* Project object */;
+}
