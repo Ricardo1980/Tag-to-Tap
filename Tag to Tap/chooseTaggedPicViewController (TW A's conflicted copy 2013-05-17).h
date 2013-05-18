@@ -24,6 +24,5 @@
 - (IBAction)nextImageForTagGame:(id)sender;
 - (IBAction)previousImageForEditPic:(id)sender;
 - (IBAction)previousImageForTagGame:(id)sender;
-- (IBAction)deleteTaggesImage:(id)sender;
 
 @end

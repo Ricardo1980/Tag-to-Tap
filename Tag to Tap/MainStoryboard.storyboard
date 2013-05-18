@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Landscape@2x~ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="MtI-5J-FAR"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVW-rq-qda">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="lD1-d4-pS6"/>
@@ -81,12 +82,16 @@
                         <constraints>
                             <constraint firstItem="DYG-Vb-TCj" firstAttribute="trailing" secondItem="bVW-rq-qda" secondAttribute="trailing" type="default" id="00P-qQ-McX"/>
                             <constraint firstItem="eES-Vu-HX0" firstAttribute="top" secondItem="aUY-N0-sZG" secondAttribute="top" type="default" id="3G0-kw-yU1"/>
+                            <constraint firstItem="bVW-rq-qda" firstAttribute="centerX" secondItem="MtI-5J-FAR" secondAttribute="centerX" type="default" id="48g-Df-ZZk"/>
+                            <constraint firstItem="MtI-5J-FAR" firstAttribute="trailing" secondItem="bOM-fX-Ezv" secondAttribute="trailing" type="default" id="7uX-N0-eCh"/>
                             <constraint firstAttribute="bottom" secondItem="eES-Vu-HX0" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Auo-49-feU"/>
-                            <constraint firstItem="DYG-Vb-TCj" firstAttribute="top" secondItem="bOM-fX-Ezv" secondAttribute="top" constant="373" id="GPC-A2-csh"/>
                             <constraint firstItem="bVW-rq-qda" firstAttribute="top" secondItem="bOM-fX-Ezv" secondAttribute="top" constant="231" id="PXi-Xo-zQD"/>
-                            <constraint firstItem="bVW-rq-qda" firstAttribute="centerX" secondItem="bOM-fX-Ezv" secondAttribute="centerX" type="default" id="Ubp-tO-7nE"/>
                             <constraint firstAttribute="bottom" secondItem="aUY-N0-sZG" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="VtX-Ti-BTp"/>
+                            <constraint firstItem="MtI-5J-FAR" firstAttribute="top" secondItem="bOM-fX-Ezv" secondAttribute="top" type="default" id="Wll-ad-hds"/>
+                            <constraint firstItem="MtI-5J-FAR" firstAttribute="bottom" secondItem="bOM-fX-Ezv" secondAttribute="bottom" type="default" id="X3V-Ut-k6E"/>
                             <constraint firstItem="eES-Vu-HX0" firstAttribute="leading" secondItem="bOM-fX-Ezv" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bBs-IL-ajl"/>
+                            <constraint firstItem="DYG-Vb-TCj" firstAttribute="top" secondItem="bOM-fX-Ezv" secondAttribute="top" constant="373" id="fVy-cH-vn9"/>
+                            <constraint firstItem="MtI-5J-FAR" firstAttribute="leading" secondItem="bOM-fX-Ezv" secondAttribute="leading" type="default" id="s6B-lP-TVG"/>
                             <constraint firstItem="DYG-Vb-TCj" firstAttribute="leading" secondItem="bVW-rq-qda" secondAttribute="leading" type="default" id="vOa-Xf-E27"/>
                             <constraint firstAttribute="trailing" secondItem="aUY-N0-sZG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wz3-Mr-OqJ"/>
                         </constraints>
@@ -96,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqA-Ob-UFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12092" y="-199"/>
+            <point key="canvasLocation" x="-12084" y="-655"/>
         </scene>
         <!--Choose Tagged Pic View Controller-->
         <scene sceneID="Ao9-vP-3i9">
@@ -106,10 +111,21 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Landscape@2x~ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="ur9-7n-NvL"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="choosePictureBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="QId-BH-2Kx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="9bb-Pc-7og"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-ha-sWs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="792" id="9Qq-79-yG5"/>
+                                    <constraint firstAttribute="height" constant="530" id="GHT-yY-9uT"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvR-7Z-XJI">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="J0u-Dw-q3P"/>
-                                    <constraint firstAttribute="width" constant="55" id="oag-Rh-TDj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="BackButton.png">
@@ -137,12 +153,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-ha-sWs">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="792" id="9Qq-79-yG5"/>
-                                    <constraint firstAttribute="height" constant="530" id="GHT-yY-9uT"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-yz-TBB">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="nng-oe-P1Q"/>
@@ -156,13 +166,16 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hyg-Cd-IAn" kind="modal" identifier="fromChosenToTagGame" id="Rro-XN-XWT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqW-Pu-pC0">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="UlZ-gm-GGJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" backgroundImage="rightButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -176,10 +189,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9t-DA-Grs">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="HnV-Fi-zMk"/>
-                                    <constraint firstAttribute="height" constant="59" id="YaB-kx-U0a"/>
+                                    <constraint firstAttribute="height" constant="60" id="abo-hc-KS3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Prev">
+                                <state key="normal" backgroundImage="leftButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -190,22 +203,45 @@
                                     <action selector="previousImageForTagGame:" destination="Lbp-Hy-WEE" eventType="touchUpInside" id="hki-Nj-ITD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-SB-tuf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="G3o-bj-GcO"/>
+                                    <constraint firstAttribute="height" constant="55" id="iw1-Dv-pBd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="exitButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="w0J-ha-sWs" firstAttribute="centerY" secondItem="kMx-7f-2Zh" secondAttribute="centerY" type="default" id="7CW-5k-7xx"/>
+                            <constraint firstItem="N9t-DA-Grs" firstAttribute="bottom" secondItem="vqW-Pu-pC0" secondAttribute="bottom" type="default" id="4bZ-TV-un6"/>
+                            <constraint firstItem="ur9-7n-NvL" firstAttribute="bottom" secondItem="kMx-7f-2Zh" secondAttribute="bottom" type="default" id="5Gm-sp-vuZ"/>
+                            <constraint firstItem="QId-BH-2Kx" firstAttribute="top" secondItem="kMx-7f-2Zh" secondAttribute="top" type="default" id="6JP-2n-fiE"/>
                             <constraint firstAttribute="trailing" secondItem="GvR-7Z-XJI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8CT-hL-79N"/>
-                            <constraint firstItem="N9t-DA-Grs" firstAttribute="bottom" secondItem="vqW-Pu-pC0" secondAttribute="bottom" type="default" id="9eu-of-peS"/>
                             <constraint firstAttribute="trailing" secondItem="vqW-Pu-pC0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D28-TA-9WA"/>
                             <constraint firstAttribute="bottom" secondItem="8pQ-Xw-2J0" secondAttribute="bottom" constant="18" id="DhG-D4-qxw"/>
                             <constraint firstItem="N9t-DA-Grs" firstAttribute="leading" secondItem="kMx-7f-2Zh" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GDx-aj-5X7"/>
+                            <constraint firstItem="6Sx-SB-tuf" firstAttribute="top" secondItem="kMx-7f-2Zh" secondAttribute="top" constant="17" id="JsV-5Y-byL"/>
                             <constraint firstItem="Czg-yz-TBB" firstAttribute="top" secondItem="GvR-7Z-XJI" secondAttribute="top" type="default" id="JzE-lx-qYd"/>
+                            <constraint firstItem="ur9-7n-NvL" firstAttribute="leading" secondItem="kMx-7f-2Zh" secondAttribute="leading" type="default" id="M0a-AO-dKq"/>
                             <constraint firstAttribute="bottom" secondItem="GvR-7Z-XJI" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="NLp-67-THE"/>
+                            <constraint firstAttribute="trailing" secondItem="6Sx-SB-tuf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qw3-xo-ptD"/>
                             <constraint firstItem="8pQ-Xw-2J0" firstAttribute="leading" secondItem="kMx-7f-2Zh" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Sgf-XX-se7"/>
+                            <constraint firstItem="6Sx-SB-tuf" firstAttribute="leading" secondItem="GvR-7Z-XJI" secondAttribute="leading" type="default" id="Xls-8i-WcL"/>
+                            <constraint firstItem="QId-BH-2Kx" firstAttribute="leading" secondItem="kMx-7f-2Zh" secondAttribute="leading" type="default" id="bGR-TQ-9WI"/>
                             <constraint firstItem="N9t-DA-Grs" firstAttribute="top" secondItem="vqW-Pu-pC0" secondAttribute="top" type="default" id="dh7-zr-iVP"/>
+                            <constraint firstItem="QId-BH-2Kx" firstAttribute="centerX" secondItem="w0J-ha-sWs" secondAttribute="centerX" type="default" id="ehn-eu-Iua"/>
+                            <constraint firstItem="ur9-7n-NvL" firstAttribute="top" secondItem="kMx-7f-2Zh" secondAttribute="top" type="default" id="eqj-lo-UOu"/>
                             <constraint firstItem="Czg-yz-TBB" firstAttribute="leading" secondItem="kMx-7f-2Zh" secondAttribute="leading" constant="468" id="kNZ-RL-s7P"/>
-                            <constraint firstItem="vqW-Pu-pC0" firstAttribute="centerY" secondItem="w0J-ha-sWs" secondAttribute="centerY" type="default" id="rqI-Lx-voz"/>
-                            <constraint firstItem="w0J-ha-sWs" firstAttribute="centerX" secondItem="kMx-7f-2Zh" secondAttribute="centerX" type="default" id="zwW-4n-i2U"/>
+                            <constraint firstItem="ur9-7n-NvL" firstAttribute="centerY" secondItem="w0J-ha-sWs" secondAttribute="centerY" type="default" id="lgC-rj-pTe"/>
+                            <constraint firstItem="N9t-DA-Grs" firstAttribute="centerY" secondItem="w0J-ha-sWs" secondAttribute="centerY" type="default" id="qVQ-Lz-OD4"/>
+                            <constraint firstItem="ur9-7n-NvL" firstAttribute="trailing" secondItem="kMx-7f-2Zh" secondAttribute="trailing" type="default" id="tWl-gd-ObO"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -217,6 +253,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68c-Lh-9FS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10871" y="-2517"/>
+        </scene>
+        <!--Tag Game View Controller-->
+        <scene sceneID="EhV-p4-gBn">
+            <objects>
+                <viewController id="hyg-Cd-IAn" customClass="TagGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dOe-W9-G0m">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tagGameBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-0v-liF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="x34-PC-YAQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZv-Wb-9yz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="665" id="T0S-6T-9ax"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-aA-xtN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="uLj-t7-gJh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="BackButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lbp-Hy-WEE" kind="modal" id="3YH-SW-Yig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxz-ld-FuO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="mr6-iV-yc2"/>
+                                    <constraint firstAttribute="width" constant="55" id="pPd-2X-xhk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="exitButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="may-aQ-DRT" kind="modal" id="roS-NV-hUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uZv-Wb-9yz" firstAttribute="leading" secondItem="dOe-W9-G0m" secondAttribute="leading" type="default" id="7RJ-qb-cNq"/>
+                            <constraint firstItem="bxz-ld-FuO" firstAttribute="top" secondItem="dOe-W9-G0m" secondAttribute="top" constant="17" id="Ara-Dh-bGq"/>
+                            <constraint firstItem="xeg-0v-liF" firstAttribute="top" secondItem="dOe-W9-G0m" secondAttribute="top" type="default" id="Hpp-ms-4eN"/>
+                            <constraint firstItem="uZv-Wb-9yz" firstAttribute="bottom" secondItem="dOe-W9-G0m" secondAttribute="bottom" type="default" id="IWf-eu-2h6"/>
+                            <constraint firstAttribute="trailing" secondItem="hTb-aA-xtN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NrG-EV-gTS"/>
+                            <constraint firstItem="bxz-ld-FuO" firstAttribute="leading" secondItem="hTb-aA-xtN" secondAttribute="leading" type="default" id="S05-p1-n38"/>
+                            <constraint firstAttribute="bottom" secondItem="hTb-aA-xtN" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="fer-1c-l0Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bxz-ld-FuO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="m0i-Rk-ZdH"/>
+                            <constraint firstItem="uZv-Wb-9yz" firstAttribute="trailing" secondItem="dOe-W9-G0m" secondAttribute="trailing" type="default" id="sgB-zF-RNH"/>
+                            <constraint firstItem="xeg-0v-liF" firstAttribute="leading" secondItem="dOe-W9-G0m" secondAttribute="leading" type="default" id="uBi-Ia-s4i"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView" destination="uZv-Wb-9yz" id="edW-sD-jYk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Go3-hG-XS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9627" y="-2495"/>
         </scene>
         <!--Take Pic Controller - createTag-->
         <scene sceneID="9pw-Ck-RWo">
@@ -242,7 +354,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-9r-q6H">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="148" id="e4R-nd-Lik"/>
+                                    <constraint firstAttribute="width" constant="150" id="4qB-a3-01Z"/>
                                     <constraint firstAttribute="height" constant="85" id="im7-zv-GUu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -320,8 +432,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-pQ-qeS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="WNh-eN-q8f"/>
+                                    <constraint firstAttribute="height" constant="86" id="eR1-iL-2DN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Choose Picture">
+                                <state key="normal" backgroundImage="choosePictures.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -335,22 +451,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="V2Y-Ew-E5A" secondAttribute="bottom" constant="2" id="6b7-CC-l70"/>
                             <constraint firstItem="Kz9-G0-0vF" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8SS-AZ-jHh"/>
                             <constraint firstItem="buy-HO-gCu" firstAttribute="top" secondItem="FY8-K2-azj" secondAttribute="top" type="default" id="B6M-Pt-A7c"/>
                             <constraint firstItem="buy-HO-gCu" firstAttribute="trailing" secondItem="FY8-K2-azj" secondAttribute="trailing" type="default" id="CwR-Xg-RPj"/>
                             <constraint firstItem="1BY-Ur-YaR" firstAttribute="bottom" secondItem="FY8-K2-azj" secondAttribute="bottom" type="default" id="F1W-SU-dXC"/>
                             <constraint firstItem="PCn-U9-zru" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" constant="191" id="F84-gy-U6c"/>
+                            <constraint firstItem="cgy-9r-q6H" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" constant="359" id="GB7-ba-Rga"/>
+                            <constraint firstAttribute="bottom" secondItem="4Zr-pQ-qeS" secondAttribute="bottom" constant="1" id="Hos-O1-pzK"/>
                             <constraint firstAttribute="trailing" secondItem="vRb-Ve-37y" secondAttribute="trailing" constant="214" id="Kaw-aC-PfA"/>
-                            <constraint firstItem="cgy-9r-q6H" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" constant="340" id="PjH-og-AwW"/>
                             <constraint firstItem="1BY-Ur-YaR" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" type="default" id="Qp0-VO-mKe"/>
                             <constraint firstItem="PCn-U9-zru" firstAttribute="centerY" secondItem="Kz9-G0-0vF" secondAttribute="centerY" type="default" id="WEo-lc-Oyt"/>
-                            <constraint firstItem="cgy-9r-q6H" firstAttribute="bottom" secondItem="V2Y-Ew-E5A" secondAttribute="bottom" type="default" id="XDq-xB-rcx"/>
-                            <constraint firstItem="4Zr-pQ-qeS" firstAttribute="leading" secondItem="cgy-9r-q6H" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="dS5-0k-wTA"/>
                             <constraint firstItem="buy-HO-gCu" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" type="default" id="mvr-fK-KFl"/>
                             <constraint firstAttribute="trailing" secondItem="V2Y-Ew-E5A" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="oKM-dw-XRi"/>
-                            <constraint firstItem="4Zr-pQ-qeS" firstAttribute="top" secondItem="V2Y-Ew-E5A" secondAttribute="top" type="default" id="omM-mY-76e"/>
                             <constraint firstItem="vRb-Ve-37y" firstAttribute="top" secondItem="Kz9-G0-0vF" secondAttribute="top" type="default" id="qqS-gz-hwi"/>
-                            <constraint firstItem="vRb-Ve-37y" firstAttribute="centerY" secondItem="4Zr-pQ-qeS" secondAttribute="centerY" type="default" id="x20-H8-ugN"/>
+                            <constraint firstItem="4Zr-pQ-qeS" firstAttribute="leading" secondItem="FY8-K2-azj" secondAttribute="leading" constant="510" id="vbC-UN-PYK"/>
+                            <constraint firstAttribute="bottom" secondItem="cgy-9r-q6H" secondAttribute="bottom" constant="3" id="yGh-ba-5Ty"/>
                             <constraint firstItem="PCn-U9-zru" firstAttribute="centerY" secondItem="1BY-Ur-YaR" secondAttribute="centerY" type="default" id="zTZ-14-D9r"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -412,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3z-GK-oRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10787" y="1399"/>
+            <point key="canvasLocation" x="-10215" y="-3763"/>
         </scene>
         <!--Choose Tagged Pic View Controller-->
         <scene sceneID="g2s-GK-ZsV">
@@ -422,9 +538,10 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="choosePictureBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="QId-BH-2Kx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Landscape@2x~ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="quk-9r-gGC"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="choosePictureBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="SU0-UC-bil">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="ekb-tX-9aF"/>
+                                    <constraint firstAttribute="height" constant="90" id="aT8-BO-Qfa"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Elb-n4-RcM">
@@ -479,7 +596,7 @@
                                     <constraint firstAttribute="width" constant="60" id="dBw-r4-KDB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" backgroundImage="rightButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -492,11 +609,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5l-V3-xoS">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="NAa-Mh-SRh"/>
                                     <constraint firstAttribute="width" constant="60" id="eek-y3-n4t"/>
+                                    <constraint firstAttribute="height" constant="60" id="i1x-mP-Qub"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Prev">
+                                <state key="normal" backgroundImage="leftButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -524,28 +641,51 @@
                                     <segue destination="hO3-80-PI4" kind="modal" identifier="fromChosenToEditTaggedImage" id="5VR-Yu-kUs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1z-PQ-sZb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gSw-VV-1ph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="no?Button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTaggesImage:" destination="8gK-21-pl6" eventType="touchUpInside" id="pna-Ac-aTY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Bwr-jS-csk" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3QR-Te-3HM"/>
                             <constraint firstAttribute="bottom" secondItem="QNC-vT-S97" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3k4-zV-ol1"/>
-                            <constraint firstItem="3dJ-qU-wRb" firstAttribute="top" secondItem="Bwr-jS-csk" secondAttribute="top" type="default" id="63k-hS-cre"/>
-                            <constraint firstItem="QNC-vT-S97" firstAttribute="top" secondItem="3dJ-qU-wRb" secondAttribute="top" type="default" id="8XD-3N-myv"/>
+                            <constraint firstItem="SU0-UC-bil" firstAttribute="centerX" secondItem="Elb-n4-RcM" secondAttribute="centerX" type="default" id="4NK-4h-rrh"/>
+                            <constraint firstItem="SU0-UC-bil" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" type="default" id="Aig-79-SJc"/>
+                            <constraint firstItem="w1z-PQ-sZb" firstAttribute="top" secondItem="3dJ-qU-wRb" secondAttribute="top" type="default" id="E1o-MJ-L3h"/>
                             <constraint firstItem="gyc-ii-9Kp" firstAttribute="top" secondItem="G5l-V3-xoS" secondAttribute="top" type="default" id="ErT-ux-B1D"/>
+                            <constraint firstItem="G5l-V3-xoS" firstAttribute="bottom" secondItem="gyc-ii-9Kp" secondAttribute="bottom" type="default" id="HWZ-BJ-aC6"/>
+                            <constraint firstItem="oY8-VF-PiC" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" constant="17" id="K0e-Mg-urP"/>
+                            <constraint firstItem="quk-9r-gGC" firstAttribute="trailing" secondItem="nm1-z0-aI7" secondAttribute="trailing" type="default" id="MbE-Vq-edc"/>
                             <constraint firstItem="Bwr-jS-csk" firstAttribute="leading" secondItem="oY8-VF-PiC" secondAttribute="leading" type="default" id="R3r-BY-keP"/>
-                            <constraint firstItem="3dJ-qU-wRb" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" constant="461" id="Skt-t1-3nS"/>
-                            <constraint firstItem="G5l-V3-xoS" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" constant="349" id="UqF-l5-H9n"/>
+                            <constraint firstItem="quk-9r-gGC" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" type="default" id="RGH-CC-w7D"/>
                             <constraint firstAttribute="trailing" secondItem="Bwr-jS-csk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VHn-11-U5u"/>
                             <constraint firstItem="QNC-vT-S97" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VeN-fn-ZZD"/>
-                            <constraint firstItem="Elb-n4-RcM" firstAttribute="centerX" secondItem="QId-BH-2Kx" secondAttribute="centerX" type="default" id="XDa-QP-7OA"/>
-                            <constraint firstItem="oY8-VF-PiC" firstAttribute="centerY" secondItem="QId-BH-2Kx" secondAttribute="centerY" type="default" id="d9E-NS-dYp"/>
-                            <constraint firstItem="QId-BH-2Kx" firstAttribute="trailing" secondItem="nm1-z0-aI7" secondAttribute="trailing" type="default" id="gxr-7a-KWp"/>
-                            <constraint firstItem="QId-BH-2Kx" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" type="default" id="iTD-Vt-fek"/>
+                            <constraint firstItem="SU0-UC-bil" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" type="default" id="ZiH-qI-YYg"/>
+                            <constraint firstItem="Bwr-jS-csk" firstAttribute="top" secondItem="QNC-vT-S97" secondAttribute="top" type="default" id="bTl-d2-P9A"/>
+                            <constraint firstAttribute="trailing" secondItem="w1z-PQ-sZb" secondAttribute="trailing" constant="311" id="fM2-Kr-5Af"/>
+                            <constraint firstItem="3dJ-qU-wRb" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" constant="317" id="iCF-g0-h0X"/>
+                            <constraint firstItem="quk-9r-gGC" firstAttribute="bottom" secondItem="nm1-z0-aI7" secondAttribute="bottom" type="default" id="jRV-QS-QY9"/>
+                            <constraint firstItem="w1z-PQ-sZb" firstAttribute="bottom" secondItem="3dJ-qU-wRb" secondAttribute="bottom" type="default" id="jtk-yZ-1Z4"/>
                             <constraint firstAttribute="trailing" secondItem="oY8-VF-PiC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="kFh-g8-V8h"/>
                             <constraint firstAttribute="trailing" secondItem="gyc-ii-9Kp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rtR-ob-Lsf"/>
-                            <constraint firstItem="gyc-ii-9Kp" firstAttribute="bottom" secondItem="G5l-V3-xoS" secondAttribute="bottom" type="default" id="sIo-Da-LgX"/>
+                            <constraint firstItem="G5l-V3-xoS" firstAttribute="centerY" secondItem="Elb-n4-RcM" secondAttribute="centerY" type="default" id="tcg-mo-q8H"/>
                             <constraint firstItem="G5l-V3-xoS" firstAttribute="leading" secondItem="nm1-z0-aI7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uAx-VN-O3N"/>
+                            <constraint firstItem="quk-9r-gGC" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" type="default" id="uKx-tp-XWm"/>
                             <constraint firstItem="Elb-n4-RcM" firstAttribute="top" secondItem="nm1-z0-aI7" secondAttribute="top" constant="114" id="wPX-cm-oVJ"/>
+                            <constraint firstAttribute="bottom" secondItem="3dJ-qU-wRb" secondAttribute="bottom" constant="32" id="zNN-1M-FtC"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -720,6 +860,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Landscape@2x~ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="RY5-pk-lBZ"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVE-kh-29S">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="McY-8j-W3w"/>
@@ -774,10 +915,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="RY5-pk-lBZ" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="33p-T3-zGz"/>
                             <constraint firstItem="fLZ-Uq-jvo" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3zO-Vg-Hnp"/>
+                            <constraint firstItem="RY5-pk-lBZ" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="D8t-jE-EaP"/>
+                            <constraint firstItem="RY5-pk-lBZ" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="J5r-fV-mEc"/>
                             <constraint firstAttribute="bottom" secondItem="fLZ-Uq-jvo" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KjT-uK-Nfa"/>
+                            <constraint firstItem="RY5-pk-lBZ" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="WWg-lk-gtl"/>
                             <constraint firstItem="AVE-kh-29S" firstAttribute="top" secondItem="5" secondAttribute="top" constant="204" id="Zrp-4r-b5B"/>
-                            <constraint firstItem="DPN-Te-bqs" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="avj-qR-jEb"/>
+                            <constraint firstItem="AVE-kh-29S" firstAttribute="centerX" secondItem="RY5-pk-lBZ" secondAttribute="centerX" type="default" id="ag4-3p-oTJ"/>
                             <constraint firstAttribute="bottom" secondItem="DPN-Te-bqs" secondAttribute="bottom" constant="243" id="c7G-ae-krm"/>
                             <constraint firstItem="DPN-Te-bqs" firstAttribute="centerX" secondItem="AVE-kh-29S" secondAttribute="centerX" type="default" id="isb-5P-wTo"/>
                         </constraints>
@@ -797,6 +942,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-Landscape@2x~ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="otm-vC-Jdc"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuu-hu-P4r">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="D3f-90-hzg"/>
@@ -864,10 +1010,14 @@
                             <constraint firstAttribute="bottom" secondItem="cIJ-rz-CMd" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="2ph-hx-FPF"/>
                             <constraint firstItem="khB-3j-tA7" firstAttribute="leading" secondItem="Uuu-hu-P4r" secondAttribute="leading" type="default" id="Ci1-W7-at2"/>
                             <constraint firstItem="Uuu-hu-P4r" firstAttribute="top" secondItem="Lab-K9-Ep9" secondAttribute="top" constant="138" id="ECh-Wn-LKQ"/>
+                            <constraint firstItem="otm-vC-Jdc" firstAttribute="top" secondItem="Lab-K9-Ep9" secondAttribute="top" type="default" id="IIg-di-56c"/>
                             <constraint firstItem="wt4-2K-hcb" firstAttribute="leading" secondItem="Lab-K9-Ep9" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IN0-nz-Wvm"/>
                             <constraint firstItem="wt4-2K-hcb" firstAttribute="top" secondItem="cIJ-rz-CMd" secondAttribute="top" type="default" id="JPN-fq-ftH"/>
+                            <constraint firstItem="otm-vC-Jdc" firstAttribute="trailing" secondItem="Lab-K9-Ep9" secondAttribute="trailing" type="default" id="Kpm-9o-294"/>
                             <constraint firstAttribute="bottom" secondItem="wt4-2K-hcb" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="SWq-6d-cd3"/>
-                            <constraint firstItem="Uuu-hu-P4r" firstAttribute="centerX" secondItem="Lab-K9-Ep9" secondAttribute="centerX" type="default" id="rvv-qB-Cx5"/>
+                            <constraint firstItem="otm-vC-Jdc" firstAttribute="leading" secondItem="Lab-K9-Ep9" secondAttribute="leading" type="default" id="U5Z-Nj-drr"/>
+                            <constraint firstItem="otm-vC-Jdc" firstAttribute="bottom" secondItem="Lab-K9-Ep9" secondAttribute="bottom" type="default" id="UAR-RA-O5L"/>
+                            <constraint firstItem="otm-vC-Jdc" firstAttribute="centerX" secondItem="Uuu-hu-P4r" secondAttribute="centerX" type="default" id="r7j-kO-ZcP"/>
                             <constraint firstAttribute="trailing" secondItem="cIJ-rz-CMd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tXI-cc-u72"/>
                             <constraint firstItem="khB-3j-tA7" firstAttribute="trailing" secondItem="Uuu-hu-P4r" secondAttribute="trailing" type="default" id="v9a-Eu-qKw"/>
                         </constraints>
@@ -883,17 +1033,22 @@
     <resources>
         <image name="?buttong.png" width="101" height="104"/>
         <image name="BackButton.png" width="101" height="104"/>
+        <image name="Default-Landscape@2x~ipad.png" width="2048" height="1496"/>
         <image name="PhotoButton.png" width="101" height="104"/>
         <image name="adultsButton .png" width="264" height="143"/>
         <image name="bar.png" width="1024" height="79"/>
         <image name="choosePictureBar.png" width="1024" height="83"/>
+        <image name="choosePictures.png" width="100" height="104"/>
         <image name="editPicButton.png" width="558" height="171"/>
         <image name="exitButton.png" width="101" height="104"/>
         <image name="guessWhatButton.png" width="558" height="171"/>
+        <image name="leftButton.png" width="101" height="104"/>
         <image name="no?Button.png" width="319" height="171"/>
         <image name="playButton.png" width="319" height="171"/>
+        <image name="rightButton.png" width="101" height="104"/>
         <image name="spellOutBar.png" width="1024" height="83"/>
         <image name="startTagingBar.png" width="1024" height="83"/>
+        <image name="tagGameBar.png" width="1024" height="83"/>
         <image name="tagGameButton.png" width="554" height="171"/>
         <image name="takePicButton.png" width="554" height="171"/>
         <image name="yesButton.png" width="319" height="171"/>
@@ -926,6 +1081,13 @@
                 <relationship kind="outlet" name="touchListener" candidateClass="UILongPressGestureRecognizer"/>
             </relationships>
         </class>
+        <class className="TagGameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagGameViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="image" candidateClass="UIImage"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="TakePicController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePicController.h"/>
             <relationships>
@@ -942,6 +1104,7 @@
         <class className="chooseTaggedPicViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/chooseTaggedPicViewController.h"/>
             <relationships>
+                <relationship kind="action" name="deleteTaggesImage:"/>
                 <relationship kind="action" name="nextImageForEditPic:"/>
                 <relationship kind="action" name="nextImageForTagGame:"/>
                 <relationship kind="action" name="previousImageForEditPic:"/>
@@ -957,10 +1120,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="b8N-NE-2SM"/>
+        <segue reference="dSs-LK-IRB"/>
+        <segue reference="ajV-nv-xOE"/>
         <segue reference="lQa-pX-S3q"/>
         <segue reference="K7F-uS-gDj"/>
-        <segue reference="ZWe-hb-kAs"/>
-        <segue reference="AJZ-Ws-j24"/>
-        <segue reference="sPr-PG-ghw"/>
+        <segue reference="uzy-zu-u9w"/>
     </inferredMetricsTieBreakers>
 </document>

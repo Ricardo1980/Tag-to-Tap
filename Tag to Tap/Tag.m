@@ -29,31 +29,33 @@ int changeColor=0;
     
     //setttings record button
     _recordButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _recordButton.frame = CGRectMake((location.x - 50) ,(location.y - 85) , 32, 32);
+    _recordButton.frame = CGRectMake((location.x - 30) ,(location.y - 85) , 32, 32);
     [_recordButton setBackgroundImage: [UIImage imageNamed:@"recordButton.png"] forState:UIControlStateNormal];
     [_recordButton addTarget:self action:@selector(recordClicked:) forControlEvents:UIControlEventTouchUpInside];
     //settings play button
     _playButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _playButton.frame = CGRectMake((location.x - 15) ,(location.y - 85) , 32, 33);
+    _playButton.frame = CGRectMake((location.x + 5) ,(location.y - 85) , 32, 33);
     [_playButton setBackgroundImage: [UIImage imageNamed:@"playButtonRec.png"] forState:UIControlStateNormal];
     [_playButton addTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
     //settings stop button
     _stopButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _stopButton.frame = CGRectMake((location.x + 20) ,(location.y - 85) , 32, 33);
+    _stopButton.frame = CGRectMake((location.x + 40) ,(location.y - 85) , 32, 33);
     [_stopButton setBackgroundImage: [UIImage imageNamed:@"stopButton.png"] forState:UIControlStateNormal];
     [_stopButton addTarget:self action:@selector(stopClicked:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    //Settings voor deleteButton
+    _deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _deleteButton.frame = CGRectMake((location.x - 85) ,(location.y - 70) , 32, 33);
+    [_deleteButton setBackgroundImage: [UIImage imageNamed:@"no?Button"] forState:UIControlStateNormal];
+    [_deleteButton addTarget:self action:@selector(deleteTag:) forControlEvents:UIControlEventTouchUpInside];
     
     //settings for the recorder
     _playButton.enabled = NO;
     _stopButton.enabled = NO;
     NSArray *dirPaths;
     NSString *docsDir;
-    
     dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     docsDir = [dirPaths objectAtIndex:0];
-    
     NSString *soundFilePath = [docsDir stringByAppendingPathComponent: [NSString stringWithFormat:@"sound%i.caf" , _idNumber]];
     NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
     NSDictionary *recordSettings = [NSDictionary
@@ -67,26 +69,18 @@ int changeColor=0;
                                     [NSNumber numberWithFloat:44100.0],
                                     AVSampleRateKey,
                                     nil];
-    
     NSError *error = nil;
-    
     _recorder = [[AVAudioRecorder alloc]
                  initWithURL:soundFileURL
                  settings:recordSettings
                  error:&error];
-    
     if (error)
     {
         NSLog(@"error: %@", [error localizedDescription]);
     } else {
         [_recorder prepareToRecord];
     }
-    
-    
-    
-    
-    
-    
+
     //Settings for the label:
     _tagLabel = [[UITextField alloc] initWithFrame:CGRectMake((location.x - 100), (location.y+50), 200, 20)];
     [_tagLabel addTarget:self action:@selector(labelClicked:) forControlEvents:UIControlEventTouchDown];
@@ -151,6 +145,8 @@ int changeColor=0;
             [_player play];
         }
     }
+    
+    [_tagLabel setHidden:NO];
 }
 
 
@@ -181,12 +177,33 @@ int changeColor=0;
     [_tagLabel selectAll:self];
 }
 
+-(void)deleteTag:(id)sender{
+    [_tagButton removeTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_tagButton removeTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_tagButton setHidden:YES];
+    
+    _tagLabel.enabled = NO;
+    [_tagLabel setHidden:YES];
+    
+    [_recordButton removeTarget:self action:@selector(recordClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_recordButton setHidden:YES];
+    [_playButton removeTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_playButton setHidden:YES];
+    [_stopButton removeTarget:self action:@selector(stopClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_stopButton setHidden:YES];
+    
+    [_deleteButton removeTarget:self action:@selector(deleteTag:) forControlEvents:UIControlEventTouchUpInside];
+    [_deleteButton setHidden:YES];
+    
+}
+
 -(void)showAll:(UIViewController *)sender{
     [sender.view addSubview:_tagButton];
     [sender.view addSubview:_tagLabel];
     [sender.view addSubview:_recordButton];
     [sender.view addSubview:_playButton];
     [sender.view addSubview:_stopButton];
+    [sender.view addSubview:_deleteButton];
     StaticData *_dataSource = [[StaticData alloc]init];
     
     if(!_dataSource.inEditMode){
@@ -206,6 +223,7 @@ int changeColor=0;
     
     [sender.view addSubview:_tagButton];
     [sender.view addSubview:_tagLabel];
+    [_tagLabel setHidden:YES];
     if(!_dataSource.inEditMode){
         [_tagButton removeTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [_tagButton addTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -221,6 +239,7 @@ int changeColor=0;
 
 -(void)showButton:(UIViewController *)sender{
     [sender.view addSubview:_tagButton];
+    
 }
 
 -(void)showText:(UIViewController *)sender{

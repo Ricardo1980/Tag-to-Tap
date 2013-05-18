@@ -8,7 +8,6 @@
 
 #import "chooseTaggedPicViewController.h"
 #import "EditPicViewController.h"
-#import "TagGameViewController.h"
 
 @interface chooseTaggedPicViewController ()
 
@@ -32,11 +31,11 @@ int currentImageID = 0;
 {
     
     [super viewDidLoad];
-//    if ([[UIScreen mainScreen]respondsToSelector:@selector(scale)]&& [[UIScreen mainScreen]scale ]== 2.0) {
-//        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape~ipad.png"]];
-//    }else{
-//        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape@2x~ipad.png"]];
-//	}
+    if ([[UIScreen mainScreen]respondsToSelector:@selector(scale)]&& [[UIScreen mainScreen]scale ]== 2.0) {
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape~ipad.png"]];
+    }else{
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape@2x~ipad.png"]];
+	}
     
 	// Do any additional setup after loading the view.
     numberOfUseableImages = 0;
@@ -69,15 +68,6 @@ int currentImageID = 0;
         NSLog(@"taggedImageToSend.idNumber: %i",_chosenTaggedImage.idNumber);
         editTaggedPictureViewController.taggedImage = _chosenTaggedImage;
     }
-    if ([segue.identifier isEqualToString:@"fromChosenToTagGame"]) {
-        
-        TagGameViewController *tagGameViewController = [[TagGameViewController alloc] initWithTaggedImage:_chosenTaggedImage];
-        tagGameViewController = segue.destinationViewController;
-        
-        NSLog(@"taggedImageToSend.idNumber: %i",_chosenTaggedImage.idNumber);
-        tagGameViewController.taggedImage = _chosenTaggedImage;
-    }
-
 }
 
 - (IBAction)nextImageForEditPic:(id)sender {
@@ -119,33 +109,5 @@ int currentImageID = 0;
         
     }
     NSLog(@"currentImageID: %i",currentImageID);
-}
-
-- (IBAction)deleteTaggesImage:(id)sender {
-    if(numberOfUseableImages > 0){
-        
-        _chosenTaggedImage = nil;
-        NSLog(@"available tagged Images BEFORE remove: %i",numberOfUseableImages);
-        [_dataSource.allTaggedImages removeObjectAtIndex:currentImageID];
-        _dataSource.currentTaggedImageID -= 1;
-        numberOfUseableImages = _dataSource.allTaggedImages.count;
-        NSLog(@"available tagged Images AFTER remove: %i",numberOfUseableImages);
-//        if(currentImageID < numberOfUseableImages){
-//            int test = currentImageID;
-//            _chosenTaggedImage = [_dataSource.allTaggedImages objectAtIndex:test];
-//            _imageViewForTagGame.image = _chosenTaggedImage.image;
-//        }else{
-//            _imageViewForEditPic.image = nil;
-//        }
-//        if(currentImageID < numberOfUseableImages){
-//            for (int i = currentImageID; i<numberOfUseableImages; i++) {
-//                int helperIndex = i+1;
-//                TaggedImage *helper = [_dataSource.allTaggedImages objectAtIndex:helperIndex];
-//                [_dataSource addTaggedImageToArray:helper atIndex:i];
-//                [_dataSource.allTaggedImages removeObjectAtIndex:helperIndex];
-//            }
-//        }
-        
-    }
 }
 @end

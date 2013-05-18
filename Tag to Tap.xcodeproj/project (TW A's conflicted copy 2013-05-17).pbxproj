@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F51DA1217464E680098C9ED /* choosePictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA0F17464E670098C9ED /* choosePictures.png */; };
-		3F51DA1317464E680098C9ED /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA1017464E670098C9ED /* leftButton.png */; };
-		3F51DA1417464E680098C9ED /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA1117464E670098C9ED /* rightButton.png */; };
 		3F8EBB09171FEF3000B016AC /* StaticData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EBB08171FEF3000B016AC /* StaticData.m */; };
 		3FAB78EA171EC3420059F29C /* TaggedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB78E9171EC3420059F29C /* TaggedImage.m */; };
 		3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */; };
@@ -23,10 +20,6 @@
 		EA2BD8BA171EA40100ABEC26 /* EditPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B9171EA40100ABEC26 /* EditPicViewController.m */; };
 		EA2BD8BD171EAC7400ABEC26 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8BC171EAC7400ABEC26 /* Tag.m */; };
 		EA2BD8BF171EAD0E00ABEC26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */; };
-		EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C85173CF0250017EBC8 /* recordButton.png */; };
-		EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */; };
-		EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C88173CF9C90017EBC8 /* stopButton.png */; };
-		EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */; };
 		EA6D8CAF171F29C800395607 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CAE171F29C800395607 /* playButton.png */; };
 		EA6D8CB3171F2BB600395607 /* ?buttong.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB2171F2BB600395607 /* ?buttong.png */; };
 		EA6D8CB5171F2CA200395607 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB4171F2CA200395607 /* BackButton.png */; };
@@ -46,6 +39,7 @@
 		EA70252A16EA08600019D97B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252916EA08600019D97B /* Default.png */; };
 		EA70252C16EA08600019D97B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252B16EA08600019D97B /* Default@2x.png */; };
 		EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA70252D16EA08600019D97B /* Default-568h@2x.png */; };
+		EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70252F16EA08600019D97B /* MainStoryboard.storyboard */; };
 		EA70253416EA08600019D97B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70253316EA08600019D97B /* ViewController.m */; };
 		EA70253C16EA08610019D97B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70253B16EA08610019D97B /* SenTestingKit.framework */; };
 		EA70253D16EA08610019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
@@ -53,9 +47,6 @@
 		EA70254616EA08610019D97B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70254416EA08610019D97B /* InfoPlist.strings */; };
 		EA70254916EA08610019D97B /* Tag_to_TapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70254816EA08610019D97B /* Tag_to_TapTests.m */; };
 		EA7ACDAB170C3995006979E7 /* TakePicController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7ACDAA170C3995006979E7 /* TakePicController.m */; };
-		EA87B808173F966A00F95694 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA87B807173F966A00F95694 /* CoreData.framework */; };
-		EA87B80B173F9AB600F95694 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA87B809173F9AB600F95694 /* Model.xcdatamodeld */; };
-		EA87B844173FA60100F95694 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B843173FA60100F95694 /* MainStoryboard.storyboard */; };
 		EAA4B80C172159AF00635FE7 /* StartTaggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */; };
 		EAEF5C0117204A2E001AB967 /* startTagingBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0017204A2E001AB967 /* startTagingBar.png */; };
 		EAEF5C0317204A36001AB967 /* no?Button.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0217204A36001AB967 /* no?Button.png */; };
@@ -77,9 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F51DA0F17464E670098C9ED /* choosePictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choosePictures.png; path = "Tag to Tap/choosePictures.png"; sourceTree = "<group>"; };
-		3F51DA1017464E670098C9ED /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftButton.png; path = "Tag to Tap/leftButton.png"; sourceTree = "<group>"; };
-		3F51DA1117464E670098C9ED /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightButton.png; path = "Tag to Tap/rightButton.png"; sourceTree = "<group>"; };
 		3F8EBB07171FEF3000B016AC /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticData.h; sourceTree = "<group>"; };
 		3F8EBB08171FEF3000B016AC /* StaticData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticData.m; sourceTree = "<group>"; };
 		3FAB78E8171EC3420059F29C /* TaggedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedImage.h; sourceTree = "<group>"; };
@@ -101,10 +89,6 @@
 		EA2BD8BB171EAC7400ABEC26 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		EA2BD8BC171EAC7400ABEC26 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		EA4E6C85173CF0250017EBC8 /* recordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton.png; sourceTree = "<group>"; };
-		EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtonRec.png; sourceTree = "<group>"; };
-		EA4E6C88173CF9C90017EBC8 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
-		EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameBar.png; sourceTree = "<group>"; };
 		EA6D8CAE171F29C800395607 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
 		EA6D8CB2171F2BB600395607 /* ?buttong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "?buttong.png"; sourceTree = "<group>"; };
 		EA6D8CB4171F2CA200395607 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
@@ -128,6 +112,7 @@
 		EA70252916EA08600019D97B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EA70252B16EA08600019D97B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EA70252D16EA08600019D97B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA70253016EA08600019D97B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EA70253216EA08600019D97B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EA70253316EA08600019D97B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA70253A16EA08610019D97B /* Tag to TapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tag to TapTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,9 +123,6 @@
 		EA70254816EA08610019D97B /* Tag_to_TapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tag_to_TapTests.m; sourceTree = "<group>"; };
 		EA7ACDA9170C3995006979E7 /* TakePicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePicController.h; sourceTree = "<group>"; };
 		EA7ACDAA170C3995006979E7 /* TakePicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePicController.m; sourceTree = "<group>"; };
-		EA87B807173F966A00F95694 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		EA87B80A173F9AB600F95694 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		EA87B843173FA60100F95694 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EAA4B80A172159AF00635FE7 /* StartTaggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTaggingViewController.h; sourceTree = "<group>"; };
 		EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTaggingViewController.m; sourceTree = "<group>"; };
 		EAEF5C0017204A2E001AB967 /* startTagingBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startTagingBar.png; sourceTree = "<group>"; };
@@ -157,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA87B808173F966A00F95694 /* CoreData.framework in Frameworks */,
 				EA2BD8BF171EAD0E00ABEC26 /* AVFoundation.framework in Frameworks */,
 				EA70251816EA08600019D97B /* UIKit.framework in Frameworks */,
 				EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */,
@@ -181,24 +162,17 @@
 		EA2BD8A8171E997900ABEC26 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				3F51DA0F17464E670098C9ED /* choosePictures.png */,
-				3F51DA1017464E670098C9ED /* leftButton.png */,
-				3F51DA1117464E670098C9ED /* rightButton.png */,
 				EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */,
 				EA6D8CB2171F2BB600395607 /* ?buttong.png */,
 				EA6D8CBA171F2E8400395607 /* PhotoButton.png */,
 				EA6D8CBB171F2E8400395607 /* yesButton.png */,
 				EAEF5C0017204A2E001AB967 /* startTagingBar.png */,
 				EAEF5C0217204A36001AB967 /* no?Button.png */,
-				EA4E6C85173CF0250017EBC8 /* recordButton.png */,
 				EAEF5C0417204BA2001AB967 /* spellOutBar.png */,
 				EAEF5C0A17205252001AB967 /* tagGameButton.png */,
 				EAEF5C0B17205252001AB967 /* guessWhatButton.png */,
 				EA6D8CAE171F29C800395607 /* playButton.png */,
 				EA6D8CC2171F364E00395607 /* faddedBackgroud.png */,
-				EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */,
-				EA4E6C88173CF9C90017EBC8 /* stopButton.png */,
-				EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */,
 				EA6D8CC0171F30F300395607 /* adultsButton .png */,
 				EAEF5C0617204EED001AB967 /* choosePictureBar.png */,
 				EAEF5C0717204EED001AB967 /* exitButton.png */,
@@ -236,7 +210,6 @@
 		EA70251616EA08600019D97B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EA87B807173F966A00F95694 /* CoreData.framework */,
 				EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */,
 				EA70251716EA08600019D97B /* UIKit.framework */,
 				EA70251916EA08600019D97B /* Foundation.framework */,
@@ -249,7 +222,7 @@
 		EA70251D16EA08600019D97B /* Tag to Tap */ = {
 			isa = PBXGroup;
 			children = (
-				EA87B843173FA60100F95694 /* MainStoryboard.storyboard */,
+				EA70252F16EA08600019D97B /* MainStoryboard.storyboard */,
 				EA70252616EA08600019D97B /* AppDelegate.h */,
 				EA70252716EA08600019D97B /* AppDelegate.m */,
 				EA70253216EA08600019D97B /* ViewController.h */,
@@ -274,7 +247,6 @@
 				3FAB78E9171EC3420059F29C /* TaggedImage.m */,
 				EA2BD8BB171EAC7400ABEC26 /* Tag.h */,
 				EA2BD8BC171EAC7400ABEC26 /* Tag.m */,
-				EA87B809173F9AB600F95694 /* Model.xcdatamodeld */,
 				EA70251E16EA08600019D97B /* Supporting Files */,
 			);
 			path = "Tag to Tap";
@@ -388,6 +360,7 @@
 				EA70252A16EA08600019D97B /* Default.png in Resources */,
 				EA70252C16EA08600019D97B /* Default@2x.png in Resources */,
 				EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */,
+				EA70253116EA08600019D97B /* MainStoryboard.storyboard in Resources */,
 				EA2BD8A1171E973900ABEC26 /* app icon bureaublad default.png in Resources */,
 				EA2BD8A3171E97D200ABEC26 /* app icon bureaublad retina.png in Resources */,
 				EA2BD8A5171E987000ABEC26 /* Default-Landscape~ipad.png in Resources */,
@@ -409,14 +382,6 @@
 				EAEF5C0917204EED001AB967 /* exitButton.png in Resources */,
 				EAEF5C0C17205253001AB967 /* tagGameButton.png in Resources */,
 				EAEF5C0D17205253001AB967 /* guessWhatButton.png in Resources */,
-				EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */,
-				EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */,
-				EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */,
-				EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */,
-				EA87B844173FA60100F95694 /* MainStoryboard.storyboard in Resources */,
-				3F51DA1217464E680098C9ED /* choosePictures.png in Resources */,
-				3F51DA1317464E680098C9ED /* leftButton.png in Resources */,
-				3F51DA1417464E680098C9ED /* rightButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +429,6 @@
 				EAA4B80C172159AF00635FE7 /* StartTaggingViewController.m in Sources */,
 				3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */,
 				3FDCE4B8172A9B3E00E15A6D /* TagGameViewController.m in Sources */,
-				EA87B80B173F9AB600F95694 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +457,14 @@
 				EA70252116EA08600019D97B /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA70252F16EA08600019D97B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70253016EA08600019D97B /* en */,
+			);
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		EA70254416EA08610019D97B /* InfoPlist.strings */ = {
@@ -653,20 +625,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EA87B809173F9AB600F95694 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EA87B80A173F9AB600F95694 /* Model.xcdatamodel */,
-			);
-			currentVersion = EA87B80A173F9AB600F95694 /* Model.xcdatamodel */;
-			name = Model.xcdatamodeld;
-			path = ../Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EA70250C16EA08600019D97B /* Project object */;
 }

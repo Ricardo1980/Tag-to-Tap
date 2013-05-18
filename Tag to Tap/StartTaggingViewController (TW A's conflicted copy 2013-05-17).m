@@ -27,17 +27,15 @@
 }
 
 - (void)viewDidLoad
+
 {
-    _dataSource = [[StaticData alloc]init];
-    _dataSource.inEditMode = YES;
-    
     [self.imageView setImage:_taggedImage.image];
     _touchListener =[[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressDetected:)];
     _touchListener.minimumPressDuration = 0.2;
     _touchListener.numberOfTouchesRequired = 1;
     [self.view addGestureRecognizer:_touchListener];
     
-    
+    _dataSource = [[StaticData alloc]init];
     NSLog(@"Datasource - current Tagged Image ID: %i",_dataSource.getCurrentTaggedImageID);
     NSLog(@"currentTaggedImage - Image ID: %i",_taggedImage.idNumber);
     //[_dataSource saveData];
@@ -58,7 +56,7 @@
     [[_shadowButton layer] setBorderWidth:2.5f];
     [[_shadowButton layer] setBorderColor:[UIColor colorWithRed:(180/255.f) green:(180/255.f) blue:(180/255.f) alpha:0.8].CGColor];
     [self.view addSubview:_shadowButton];
-    
+
     [super viewDidLoad];
 	
     // Do any additional setup after loading the view.
@@ -70,34 +68,23 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)longPressDetected:(UIGestureRecognizer *)sender {
-    CGPoint location = [_touchListener locationInView:self.view];
-    if(location.y >= 140 && location.y <= 688){
-        if (sender.state == UIGestureRecognizerStateEnded) {
-            _shadowButton.hidden = YES;
-            
-            NSLog(@"Long press Ended");
-            Tag *newTag = [[Tag alloc]init];
-            CGPoint location = [_touchListener locationInView:self.view];
-            int tagID = [_taggedImage.tags count];
-            [newTag createTag:self atLocation:location withIDNumber:tagID];
-            [self.view addSubview:newTag.tagButton];
-            [self.view addSubview:newTag.recordButton];
-            [self.view addSubview:newTag.playButton];
-            [self.view addSubview:newTag.stopButton];
-            [self.view addSubview:newTag.deleteButton];
-            [_taggedImage addTagtoArray:newTag];
-            [_dataSource addTaggedImageToArray:_taggedImage atIndex:[_dataSource getCurrentTaggedImageID]-2];
-            
-        }
-        else {
-            
-            CGPoint location = [_touchListener locationInView:self.view];
-            _shadowButton.frame = CGRectMake((location.x - 75), (location.y - 50), 150, 100);
-            _shadowButton.hidden = NO;
-        }
-    }
-    else{
+    
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        _shadowButton.hidden = YES;
         
+        NSLog(@"Long press Ended");
+        Tag *newTag = [[Tag alloc]init];
+        CGPoint location = [_touchListener locationInView:self.view];
+        [newTag createTag:self atLocation:location];
+        [self.view addSubview:newTag.tagButton];
+        [_taggedImage addTagtoArray:newTag];
+        [_dataSource addTaggedImageToArray:_taggedImage atIndex:[_dataSource getCurrentTaggedImageID]-2];
+    }
+    else {
+        
+        CGPoint location = [_touchListener locationInView:self.view];
+        _shadowButton.frame = CGRectMake((location.x - 75), (location.y - 50), 150, 100);
+        _shadowButton.hidden = NO;
     }
     
 }
@@ -109,7 +96,7 @@
     NSLog(@"tag y height: %f", _dataSource.selectedTag.tagLabel.center.y);
     
     if(_dataSource.selectedTag.tagLabel.center.y > self.view.frame.size.height/2.8){
-        self.view.center = CGPointMake(50,self->originalCenter.y);
+        self.view.center = CGPointMake(150,self->originalCenter.y);
     }
 }
 -(void) keyboardDidHide: (NSNotification *)notif

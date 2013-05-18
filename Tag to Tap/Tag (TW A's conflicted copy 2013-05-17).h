@@ -10,27 +10,17 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreAudio/CoreAudioTypes.h>
 
-@interface Tag : NSObject<AVAudioRecorderDelegate ,AVAudioPlayerDelegate >{
-    
-    
-    BOOL isNotRecording;
-}
-@property UIButton *playButton;
-@property UIButton *stopButton;
+@interface Tag : NSObject<AVAudioRecorderDelegate>
+
 @property UIButton *tagButton;
-@property UIButton *recordButton;
-@property UIButton *deleteButton;
 @property UITextField *tagLabel;
-@property NSURL *temporaryRecFile;
+@property NSURL *temporaryRecFiler;
 @property AVAudioRecorder *recorder;
-@property AVAudioPlayer *player;
-@property int idNumber;
 
-
--(void)createTag:(UIViewController *)sender atLocation:(CGPoint)location withIDNumber:(int)theID;
+-(void)createTag:(UIViewController *)sender atLocation:(CGPoint)location;
 -(void)setText:(NSString *)theText;
 -(void)setVoice:(id)sender;
--(void)showAll:(UIViewController *)sender;
+
 -(void)showButtonAndText:(UIViewController *)sender;
 -(void)showButton:(UIViewController *)sender;
 -(void)showText:(UIViewController *)sender;

@@ -82,6 +82,7 @@
             [self.view addSubview:newTag.recordButton];
             [self.view addSubview:newTag.playButton];
             [self.view addSubview:newTag.stopButton];
+            [self.view addSubview:newTag.deleteButton];
             [_taggedImage addTagtoArray:newTag];
             [_dataSource addTaggedImageToArray:_taggedImage atIndex:[_dataSource getCurrentTaggedImageID]-2];
             

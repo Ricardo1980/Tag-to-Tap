@@ -22,8 +22,8 @@
 {
     [super viewDidLoad];
     
-    _dataSource = [[StaticData alloc]init];
-    
+     _dataSource = [[StaticData alloc]init];
+
 }
 - (void)didReceiveMemoryWarning
 {
@@ -41,11 +41,9 @@
         StartTaggingViewController *startTaggingViewController = [[StartTaggingViewController alloc] initWithTaggedImage:taggedImageToSend];
         startTaggingViewController = segue.destinationViewController;
         
-        if(taggedImageToSend.image != nil){
-            [_dataSource addTaggedImageToArray:taggedImageToSend];
-            NSLog(@"taggedImageToSend.idNumber: %i",taggedImageToSend.idNumber);
-            startTaggingViewController.taggedImage = taggedImageToSend;
-        }
+        [_dataSource addTaggedImageToArray:taggedImageToSend];
+        NSLog(@"taggedImageToSend.idNumber: %i",taggedImageToSend.idNumber);
+        startTaggingViewController.taggedImage = taggedImageToSend;
     }
 }
 
@@ -71,7 +69,7 @@
         [alert show];
         
     }
-    
+
 }
 
 - (IBAction)choosePicButton:(id)sender{
