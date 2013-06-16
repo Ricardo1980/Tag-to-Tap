@@ -2,7 +2,7 @@
 //  TaggedImage.h
 //  Tag to Tap
 //
-//  Created by Student on 4/17/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/17/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 

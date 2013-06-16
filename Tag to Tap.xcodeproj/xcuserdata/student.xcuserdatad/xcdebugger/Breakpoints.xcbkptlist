@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tag to Tap/StartTaggingViewController.m"
-         timestampString = "388675703.114251"
+         timestampString = "392229707.605209"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
+         startingLineNumber = "74"
+         endingLineNumber = "74"
          landmarkName = "-didReceiveMemoryWarning"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tag to Tap/StartTaggingViewController.m"
-         timestampString = "388675703.114251"
+         timestampString = "392229707.605209"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "75"
-         endingLineNumber = "75"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-longPressDetected:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tag to Tap/StartTaggingViewController.m"
-         timestampString = "388589173.850867"
+         timestampString = "392229707.605209"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,20 +47,20 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tag to Tap/StaticData.m"
-         timestampString = "388501484.391779"
+         timestampString = "392229707.605209"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
-         landmarkName = "-loadData"
-         landmarkType = "5">
+         startingLineNumber = "58"
+         endingLineNumber = "58"
+         landmarkName = "@implementation StaticData"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Tag to Tap/chooseTaggedPicViewController.h"
-         timestampString = "388674528.655701"
+         timestampString = "391084007.077136"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "17"

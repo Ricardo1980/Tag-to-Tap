@@ -2,7 +2,7 @@
 //  StaticData.m
 //  Tag to Tap
 //
-//  Created by Student on 4/18/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/18/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ static StaticData *singleTon;
 {
     if(singleTon == nil) {
         singleTon = [super init];
-        _currentTaggedImageID = 1;
+        _currentNumberOfTaggedImages = 0;
         _allTaggedImages = [[NSMutableArray alloc] init];
         if (self) {
             // double check
@@ -25,18 +25,19 @@ static StaticData *singleTon;
     return singleTon;
 }
 
--(NSString *)getFilePath{
-    
-    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    return [[pathArray objectAtIndex:0] stringByAppendingPathComponent:@"dataFile"];
-}
-
--(int)getCurrentTaggedImageID{
-    return _currentTaggedImageID;
+-(int)getCurrentNumberOfTaggedImages{
+    return _currentNumberOfTaggedImages;
 }
 
 -(void)setCurrentTaggedId:(int)theCurrentTaggedImageID{
-    _currentTaggedImageID = theCurrentTaggedImageID;
+    _currentNumberOfTaggedImages = theCurrentTaggedImageID;
+}
+
+/*
+ * Not used at this time, because Core Data is not working for custom objects. 
+-(NSString *)getFilePath{
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [[pathArray objectAtIndex:0] stringByAppendingPathComponent:@"dataFile"];
 }
 
 -(void)saveData{
@@ -62,7 +63,7 @@ static StaticData *singleTon;
     }
     
 }
-
+*/
 -(void)addTaggedImageToArray:(TaggedImage *)theTaggedImage{
     [_allTaggedImages addObject:theTaggedImage];
 }

@@ -2,7 +2,7 @@
 //  Tag.m
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 4/17/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/17/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 
@@ -11,13 +11,20 @@
 #import "EditPicViewController.h"
 #import "StartTaggingViewController.h"
 #import "StaticData.h"
+#import "GuessWhatViewController.h"
 
 int changeColor=0;
 
 @implementation Tag
+/*
+ * Initialize function for a Tag, where an UIViewController, CGPoint and IDNumber(int) is neede as parameter.
+ * Hierin worden alle buttons en label aangemaakt die een tag tot zijn beschikking heeft:
+ * kader, tekst, opnemen, afspelen en delete
+ */
 -(void)createTag:(UIViewController *)sender atLocation:(CGPoint)location withIDNumber:(int)theID{
     
     _idNumber = theID;
+    _available = YES;
     
     //Settings for tag Button:
     _tagButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -30,7 +37,7 @@ int changeColor=0;
     //setttings record button
     _recordButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _recordButton.frame = CGRectMake((location.x - 30) ,(location.y - 85) , 32, 32);
-    [_recordButton setBackgroundImage: [UIImage imageNamed:@"recordButton.png"] forState:UIControlStateNormal];
+    [_recordButton setBackgroundImage: [UIImage imageNamed:@"recordButton2.png"] forState:UIControlStateNormal];
     [_recordButton addTarget:self action:@selector(recordClicked:) forControlEvents:UIControlEventTouchUpInside];
     //settings play button
     _playButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -39,8 +46,9 @@ int changeColor=0;
     [_playButton addTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
     //settings stop button
     _stopButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _stopButton.frame = CGRectMake((location.x + 40) ,(location.y - 85) , 32, 33);
-    [_stopButton setBackgroundImage: [UIImage imageNamed:@"stopButton.png"] forState:UIControlStateNormal];
+    //_stopButton.frame = CGRectMake((location.x + 40) ,(location.y - 85) , 32, 33);
+    _stopButton.frame = CGRectMake((location.x - 30) ,(location.y - 85) , 32, 32);
+    [_stopButton setBackgroundImage: [UIImage imageNamed:@"recordButton.png"] forState:UIControlStateNormal];
     [_stopButton addTarget:self action:@selector(stopClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     //Settings voor deleteButton
@@ -51,7 +59,8 @@ int changeColor=0;
     
     //settings for the recorder
     _playButton.enabled = NO;
-    _stopButton.enabled = NO;
+    //_stopButton.enabled = NO;
+    _stopButton.alpha = 0;
     NSArray *dirPaths;
     NSString *docsDir;
     dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -102,15 +111,20 @@ int changeColor=0;
 -(void)recordClicked:(id)sender{
     if (!_recorder.recording)
     {
+        if(_player.playing){
+            [_player stop];
+        }
         NSLog(@"in the if of record clicked");
         _playButton.enabled = NO;
-        _stopButton.enabled = YES;
+        //_stopButton.enabled = YES;
+        _stopButton.alpha = 1;
         [_recorder record];
     }
 }
 
 -(void)stopClicked:(id)sender{
-    _stopButton.enabled = NO;
+    //_stopButton.enabled = NO;
+    _stopButton.alpha = 0;
     _playButton.enabled = YES;
     _recordButton.enabled = YES;
     
@@ -125,10 +139,79 @@ int changeColor=0;
     
 }
 
+/*
+ * If the current target of the button = playClicked, then the following function will be executed.
+ * It checks (through the StaticData) if you are currently playing the GuessWhat game.
+ */
 -(void)playClicked:(id)sender{
+    StaticData *_dataSource = [[StaticData alloc]init];
+    _dataSource.selectedTag = self;
+    
+    if(!_dataSource.guessWhatGameMode)
+    {
+        if (!_recorder.recording)
+        {
+            //_stopButton.enabled = YES;
+            _stopButton.alpha = 0;
+            //_recordButton.enabled = NO;
+            NSError *error = nil;
+            
+            _player = [[AVAudioPlayer alloc]
+                       initWithContentsOfURL:_recorder.url
+                       error:nil];
+            
+            _player.delegate = self;
+            
+            if (error){
+                NSLog(@"Error: %@",
+                      [error localizedDescription]);
+            }else{
+                [_player play];
+            }
+        }
+        [_tagLabel setHidden:NO];
+    }
+    else if(_dataSource.guessWhatGameMode){
+        NSString *noWhiteSpacesText = [_tagLabel.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSLog(@"DataSource Text: %@", _dataSource.GuessGameText);
+        NSLog(@"tagLabel Text: %@", _tagLabel.text);
+        NSLog(@"tagLabel noWhiteSpace Text: %@", noWhiteSpacesText);
+        if([_dataSource.GuessGameText isEqualToString:noWhiteSpacesText]){
+            [_tagLabel setHidden:NO];
+            _dataSource.updateGuessWhatGame = YES;
+        }
+        else{
+            NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                                 pathForResource:@"wrong"
+                                                 ofType:@"wav"]];
+            
+            NSError *error;
+            _wrongTagSoundPlayer = [[AVAudioPlayer alloc]
+                            initWithContentsOfURL:url
+                            error:&error];
+            if (error)
+            {
+                NSLog(@"Error in wrongTagSoundPlayer: %@",
+                      [error localizedDescription]);
+            } else {
+                _wrongTagSoundPlayer.delegate = self;
+                [_wrongTagSoundPlayer prepareToPlay];
+                [_wrongTagSoundPlayer play];
+            }
+        }
+    }
+    
+    
+}
+
+/*
+ * Used in the GuessWhat viewController.
+ */
+-(void)playRecording{
     if (!_recorder.recording)
     {
-        _stopButton.enabled = YES;
+        //_stopButton.enabled = YES;
+        _stopButton.alpha = 1;
         _recordButton.enabled = NO;
         NSError *error = nil;
         
@@ -145,16 +228,13 @@ int changeColor=0;
             [_player play];
         }
     }
-    
-    [_tagLabel setHidden:NO];
 }
 
-
--(void)setVoice:(id)sender{
-    
-}
-
+/*
+ * If the current target of the button = buttonClicked, then the following function will be executed
+ */
 -(void)buttonClicked:(id)sender{
+    
     StaticData *_dataSource = [[StaticData alloc]init];
     _dataSource.selectedTag = self;
     
@@ -177,7 +257,14 @@ int changeColor=0;
     [_tagLabel selectAll:self];
 }
 
+
+/*
+ * A 'delete' function.
+ * This removes all buttons, texts and targets of a Tag
+ */
 -(void)deleteTag:(id)sender{
+    _available = NO;
+    
     [_tagButton removeTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_tagButton removeTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_tagButton setHidden:YES];
@@ -197,6 +284,11 @@ int changeColor=0;
     
 }
 
+
+/*
+ * Below you will find serveral 'show...' functions.
+ * Each function tells the app what buttons/texts have to be shown in the current viewController.
+ */
 -(void)showAll:(UIViewController *)sender{
     [sender.view addSubview:_tagButton];
     [sender.view addSubview:_tagLabel];
@@ -238,7 +330,19 @@ int changeColor=0;
 }
 
 -(void)showButton:(UIViewController *)sender{
+    StaticData *_dataSource = [[StaticData alloc]init];
     [sender.view addSubview:_tagButton];
+    [_tagLabel setHidden:YES];
+    if(!_dataSource.inEditMode){
+        [_tagButton removeTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [_tagButton addTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
+        _tagLabel.enabled = NO;
+    }
+    else if(_dataSource.inEditMode){
+        [_tagButton removeTarget:self action:@selector(playClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [_tagButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        _tagLabel.enabled = YES;
+    }
     
 }
 

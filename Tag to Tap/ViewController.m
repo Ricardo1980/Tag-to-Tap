@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 3/8/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 3/8/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 
@@ -19,17 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        //if statment is used to check we are on a ipad or an ipad retina 
-//    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-//        ([UIScreen mainScreen].scale == 2.0)) {
-//        // Retina display
-//        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape@2x~ipad.png"]];
-//    }else{
-//        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape~ipad.png"]];
-//	}
-    
-    
-    
+    [_creditsImage setAlpha:0.0];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -39,7 +29,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)Button:(id)sender {
+- (IBAction)qmarkButtonPressed:(id)sender {
+    if(_creditsImage.alpha == 0)
+        [_creditsImage setAlpha:1.0];
+    else if(_creditsImage.alpha == 1.0)
+        [_creditsImage setAlpha:0.0];
 }
 @end

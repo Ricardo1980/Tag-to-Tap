@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 3/8/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 3/8/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 

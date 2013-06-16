@@ -2,7 +2,7 @@
 //  TakePicController.h
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 4/3/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/3/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 

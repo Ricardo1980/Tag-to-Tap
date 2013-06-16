@@ -7,36 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F51DA1217464E680098C9ED /* choosePictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA0F17464E670098C9ED /* choosePictures.png */; };
-		3F51DA1317464E680098C9ED /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA1017464E670098C9ED /* leftButton.png */; };
-		3F51DA1417464E680098C9ED /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F51DA1117464E670098C9ED /* rightButton.png */; };
+		3F51DA17174A57240098C9ED /* GuessWhatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F51DA16174A57230098C9ED /* GuessWhatViewController.m */; };
 		3F8EBB09171FEF3000B016AC /* StaticData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8EBB08171FEF3000B016AC /* StaticData.m */; };
+		3F9ED62D175CA92E00746AE5 /* ?buttong.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED607175CA92E00746AE5 /* ?buttong.png */; };
+		3F9ED62E175CA92E00746AE5 /* adultsButton .png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED608175CA92E00746AE5 /* adultsButton .png */; };
+		3F9ED62F175CA92E00746AE5 /* againButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED609175CA92E00746AE5 /* againButton.png */; };
+		3F9ED630175CA92E00746AE5 /* app icon appstore default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60A175CA92E00746AE5 /* app icon appstore default.png */; };
+		3F9ED631175CA92E00746AE5 /* app icon bureaublad default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60B175CA92E00746AE5 /* app icon bureaublad default.png */; };
+		3F9ED632175CA92E00746AE5 /* app icon bureaublad retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60C175CA92E00746AE5 /* app icon bureaublad retina.png */; };
+		3F9ED633175CA92E00746AE5 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60D175CA92E00746AE5 /* BackButton.png */; };
+		3F9ED634175CA92E00746AE5 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60E175CA92E00746AE5 /* bar.png */; };
+		3F9ED635175CA92E00746AE5 /* changeTagsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED60F175CA92E00746AE5 /* changeTagsButton.png */; };
+		3F9ED636175CA92E00746AE5 /* choosePictureBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED610175CA92E00746AE5 /* choosePictureBar.png */; };
+		3F9ED637175CA92E00746AE5 /* choosePictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED611175CA92E00746AE5 /* choosePictures.png */; };
+		3F9ED638175CA92E00746AE5 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED612175CA92E00746AE5 /* Default-Landscape@2x~ipad.png */; };
+		3F9ED639175CA92E00746AE5 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED613175CA92E00746AE5 /* Default-Landscape~ipad.png */; };
+		3F9ED63A175CA92E00746AE5 /* deleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED614175CA92E00746AE5 /* deleteButton.png */; };
+		3F9ED63B175CA92E00746AE5 /* editPicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED615175CA92E00746AE5 /* editPicButton.png */; };
+		3F9ED63C175CA92E00746AE5 /* exitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED616175CA92E00746AE5 /* exitButton.png */; };
+		3F9ED63D175CA92E00746AE5 /* faddedBackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED617175CA92E00746AE5 /* faddedBackgroud.png */; };
+		3F9ED63E175CA92E00746AE5 /* guessWhatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED618175CA92E00746AE5 /* guessWhatButton.png */; };
+		3F9ED63F175CA92E00746AE5 /* Launch image default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED619175CA92E00746AE5 /* Launch image default.png */; };
+		3F9ED640175CA92E00746AE5 /* Launch image retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61A175CA92E00746AE5 /* Launch image retina.png */; };
+		3F9ED641175CA92E00746AE5 /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61B175CA92E00746AE5 /* leftButton.png */; };
+		3F9ED642175CA92E00746AE5 /* no?Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61C175CA92E00746AE5 /* no?Button.png */; };
+		3F9ED643175CA92E00746AE5 /* PhotoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61D175CA92E00746AE5 /* PhotoButton.png */; };
+		3F9ED644175CA92E00746AE5 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61E175CA92E00746AE5 /* playButton.png */; };
+		3F9ED645175CA92E00746AE5 /* playButtonRec.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED61F175CA92E00746AE5 /* playButtonRec.png */; };
+		3F9ED646175CA92E00746AE5 /* playButtony.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED620175CA92E00746AE5 /* playButtony.png */; };
+		3F9ED647175CA92E00746AE5 /* record button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED621175CA92E00746AE5 /* record button.png */; };
+		3F9ED648175CA92E00746AE5 /* recordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED622175CA92E00746AE5 /* recordButton.png */; };
+		3F9ED649175CA92E00746AE5 /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED623175CA92E00746AE5 /* rightButton.png */; };
+		3F9ED64A175CA92E00746AE5 /* spellOutBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED624175CA92E00746AE5 /* spellOutBar.png */; };
+		3F9ED64B175CA92E00746AE5 /* startTaggingBars.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED625175CA92E00746AE5 /* startTaggingBars.png */; };
+		3F9ED64C175CA92E00746AE5 /* startTagingBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED626175CA92E00746AE5 /* startTagingBar.png */; };
+		3F9ED64D175CA92E00746AE5 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED627175CA92E00746AE5 /* stopButton.png */; };
+		3F9ED64E175CA92E00746AE5 /* tagGameBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED628175CA92E00746AE5 /* tagGameBar.png */; };
+		3F9ED64F175CA92E00746AE5 /* tagGameButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED629175CA92E00746AE5 /* tagGameButton.png */; };
+		3F9ED650175CA92E00746AE5 /* takePicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED62A175CA92E00746AE5 /* takePicButton.png */; };
+		3F9ED651175CA92E00746AE5 /* wellDonePurple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED62B175CA92E00746AE5 /* wellDonePurple.png */; };
+		3F9ED652175CA92E00746AE5 /* yesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED62C175CA92E00746AE5 /* yesButton.png */; };
+		3F9ED6541760F22A00746AE5 /* TextField.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9ED6531760F22A00746AE5 /* TextField.png */; };
 		3FAB78EA171EC3420059F29C /* TaggedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB78E9171EC3420059F29C /* TaggedImage.m */; };
+		3FB2C6A1176755D000B893AE /* wellDonePurple_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6A0176755D000B893AE /* wellDonePurple_empty.png */; };
+		3FB2C6A41767563100B893AE /* WellDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C6A31767563100B893AE /* WellDoneViewController.m */; };
+		3FB2C6B017675A7C00B893AE /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6AF17675A7C00B893AE /* applause.wav */; };
+		3FB2C6B81768996100B893AE /* wellDone1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6B31768996100B893AE /* wellDone1.png */; };
+		3FB2C6B91768996100B893AE /* wellDone2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6B41768996100B893AE /* wellDone2.png */; };
+		3FB2C6BA1768996100B893AE /* wellDone3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6B51768996100B893AE /* wellDone3.png */; };
+		3FB2C6BB1768996100B893AE /* wellDone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6B61768996100B893AE /* wellDone4.png */; };
+		3FB2C6BC1768996100B893AE /* wellDone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6B71768996100B893AE /* wellDone5.png */; };
+		3FB2C6BE176CDE9E00B893AE /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6BD176CDE9D00B893AE /* wrong.wav */; };
+		3FB2C6C0176CE35400B893AE /* recordButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6BF176CE35400B893AE /* recordButton2.png */; };
+		3FB2C6C2176CE61100B893AE /* vraagtekenPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C6C1176CE61100B893AE /* vraagtekenPopup.png */; };
 		3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */; };
 		3FDCE4B8172A9B3E00E15A6D /* TagGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */; };
-		EA2BD8A1171E973900ABEC26 /* app icon bureaublad default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */; };
-		EA2BD8A3171E97D200ABEC26 /* app icon bureaublad retina.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */; };
-		EA2BD8A5171E987000ABEC26 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */; };
-		EA2BD8A7171E993E00ABEC26 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */; };
 		EA2BD8B4171E9FC400ABEC26 /* ChildrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */; };
 		EA2BD8B7171EA2A700ABEC26 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B6171EA2A700ABEC26 /* ParentViewController.m */; };
 		EA2BD8BA171EA40100ABEC26 /* EditPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8B9171EA40100ABEC26 /* EditPicViewController.m */; };
 		EA2BD8BD171EAC7400ABEC26 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2BD8BC171EAC7400ABEC26 /* Tag.m */; };
 		EA2BD8BF171EAD0E00ABEC26 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */; };
-		EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C85173CF0250017EBC8 /* recordButton.png */; };
-		EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */; };
-		EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C88173CF9C90017EBC8 /* stopButton.png */; };
-		EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */; };
-		EA6D8CAF171F29C800395607 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CAE171F29C800395607 /* playButton.png */; };
-		EA6D8CB3171F2BB600395607 /* ?buttong.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB2171F2BB600395607 /* ?buttong.png */; };
-		EA6D8CB5171F2CA200395607 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB4171F2CA200395607 /* BackButton.png */; };
-		EA6D8CB8171F2D6D00395607 /* takePicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB6171F2D6D00395607 /* takePicButton.png */; };
-		EA6D8CB9171F2D6D00395607 /* editPicButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CB7171F2D6D00395607 /* editPicButton.png */; };
-		EA6D8CBC171F2E8400395607 /* PhotoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBA171F2E8400395607 /* PhotoButton.png */; };
-		EA6D8CBD171F2E8400395607 /* yesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBB171F2E8400395607 /* yesButton.png */; };
-		EA6D8CBF171F2F2D00395607 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CBE171F2F2D00395607 /* bar.png */; };
-		EA6D8CC1171F30F300395607 /* adultsButton .png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CC0171F30F300395607 /* adultsButton .png */; };
-		EA6D8CC3171F364E00395607 /* faddedBackgroud.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6D8CC2171F364E00395607 /* faddedBackgroud.png */; };
 		EA70251816EA08600019D97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251716EA08600019D97B /* UIKit.framework */; };
 		EA70251A16EA08600019D97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251916EA08600019D97B /* Foundation.framework */; };
 		EA70251C16EA08600019D97B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70251B16EA08600019D97B /* CoreGraphics.framework */; };
@@ -57,13 +87,6 @@
 		EA87B80B173F9AB600F95694 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA87B809173F9AB600F95694 /* Model.xcdatamodeld */; };
 		EA87B844173FA60100F95694 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B843173FA60100F95694 /* MainStoryboard.storyboard */; };
 		EAA4B80C172159AF00635FE7 /* StartTaggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */; };
-		EAEF5C0117204A2E001AB967 /* startTagingBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0017204A2E001AB967 /* startTagingBar.png */; };
-		EAEF5C0317204A36001AB967 /* no?Button.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0217204A36001AB967 /* no?Button.png */; };
-		EAEF5C0517204BA2001AB967 /* spellOutBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0417204BA2001AB967 /* spellOutBar.png */; };
-		EAEF5C0817204EED001AB967 /* choosePictureBar.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0617204EED001AB967 /* choosePictureBar.png */; };
-		EAEF5C0917204EED001AB967 /* exitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0717204EED001AB967 /* exitButton.png */; };
-		EAEF5C0C17205253001AB967 /* tagGameButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0A17205252001AB967 /* tagGameButton.png */; };
-		EAEF5C0D17205253001AB967 /* guessWhatButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5C0B17205252001AB967 /* guessWhatButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,21 +100,67 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F51DA0F17464E670098C9ED /* choosePictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choosePictures.png; path = "Tag to Tap/choosePictures.png"; sourceTree = "<group>"; };
-		3F51DA1017464E670098C9ED /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftButton.png; path = "Tag to Tap/leftButton.png"; sourceTree = "<group>"; };
-		3F51DA1117464E670098C9ED /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightButton.png; path = "Tag to Tap/rightButton.png"; sourceTree = "<group>"; };
+		3F51DA15174A57230098C9ED /* GuessWhatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessWhatViewController.h; sourceTree = "<group>"; };
+		3F51DA16174A57230098C9ED /* GuessWhatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessWhatViewController.m; sourceTree = "<group>"; };
 		3F8EBB07171FEF3000B016AC /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticData.h; sourceTree = "<group>"; };
 		3F8EBB08171FEF3000B016AC /* StaticData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticData.m; sourceTree = "<group>"; };
+		3F9ED607175CA92E00746AE5 /* ?buttong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "?buttong.png"; sourceTree = "<group>"; };
+		3F9ED608175CA92E00746AE5 /* adultsButton .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adultsButton .png"; sourceTree = "<group>"; };
+		3F9ED609175CA92E00746AE5 /* againButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = againButton.png; sourceTree = "<group>"; };
+		3F9ED60A175CA92E00746AE5 /* app icon appstore default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon appstore default.png"; sourceTree = "<group>"; };
+		3F9ED60B175CA92E00746AE5 /* app icon bureaublad default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad default.png"; sourceTree = "<group>"; };
+		3F9ED60C175CA92E00746AE5 /* app icon bureaublad retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad retina.png"; sourceTree = "<group>"; };
+		3F9ED60D175CA92E00746AE5 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		3F9ED60E175CA92E00746AE5 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		3F9ED60F175CA92E00746AE5 /* changeTagsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeTagsButton.png; sourceTree = "<group>"; };
+		3F9ED610175CA92E00746AE5 /* choosePictureBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choosePictureBar.png; sourceTree = "<group>"; };
+		3F9ED611175CA92E00746AE5 /* choosePictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choosePictures.png; sourceTree = "<group>"; };
+		3F9ED612175CA92E00746AE5 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		3F9ED613175CA92E00746AE5 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		3F9ED614175CA92E00746AE5 /* deleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteButton.png; sourceTree = "<group>"; };
+		3F9ED615175CA92E00746AE5 /* editPicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editPicButton.png; sourceTree = "<group>"; };
+		3F9ED616175CA92E00746AE5 /* exitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitButton.png; sourceTree = "<group>"; };
+		3F9ED617175CA92E00746AE5 /* faddedBackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faddedBackgroud.png; sourceTree = "<group>"; };
+		3F9ED618175CA92E00746AE5 /* guessWhatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guessWhatButton.png; sourceTree = "<group>"; };
+		3F9ED619175CA92E00746AE5 /* Launch image default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch image default.png"; sourceTree = "<group>"; };
+		3F9ED61A175CA92E00746AE5 /* Launch image retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch image retina.png"; sourceTree = "<group>"; };
+		3F9ED61B175CA92E00746AE5 /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButton.png; sourceTree = "<group>"; };
+		3F9ED61C175CA92E00746AE5 /* no?Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no?Button.png"; sourceTree = "<group>"; };
+		3F9ED61D175CA92E00746AE5 /* PhotoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhotoButton.png; sourceTree = "<group>"; };
+		3F9ED61E175CA92E00746AE5 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		3F9ED61F175CA92E00746AE5 /* playButtonRec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtonRec.png; sourceTree = "<group>"; };
+		3F9ED620175CA92E00746AE5 /* playButtony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtony.png; sourceTree = "<group>"; };
+		3F9ED621175CA92E00746AE5 /* record button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record button.png"; sourceTree = "<group>"; };
+		3F9ED622175CA92E00746AE5 /* recordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton.png; sourceTree = "<group>"; };
+		3F9ED623175CA92E00746AE5 /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
+		3F9ED624175CA92E00746AE5 /* spellOutBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellOutBar.png; sourceTree = "<group>"; };
+		3F9ED625175CA92E00746AE5 /* startTaggingBars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startTaggingBars.png; sourceTree = "<group>"; };
+		3F9ED626175CA92E00746AE5 /* startTagingBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startTagingBar.png; sourceTree = "<group>"; };
+		3F9ED627175CA92E00746AE5 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
+		3F9ED628175CA92E00746AE5 /* tagGameBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameBar.png; sourceTree = "<group>"; };
+		3F9ED629175CA92E00746AE5 /* tagGameButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameButton.png; sourceTree = "<group>"; };
+		3F9ED62A175CA92E00746AE5 /* takePicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takePicButton.png; sourceTree = "<group>"; };
+		3F9ED62B175CA92E00746AE5 /* wellDonePurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDonePurple.png; sourceTree = "<group>"; };
+		3F9ED62C175CA92E00746AE5 /* yesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesButton.png; sourceTree = "<group>"; };
+		3F9ED6531760F22A00746AE5 /* TextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextField.png; sourceTree = "<group>"; };
 		3FAB78E8171EC3420059F29C /* TaggedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedImage.h; sourceTree = "<group>"; };
 		3FAB78E9171EC3420059F29C /* TaggedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedImage.m; sourceTree = "<group>"; };
+		3FB2C6A0176755D000B893AE /* wellDonePurple_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDonePurple_empty.png; sourceTree = "<group>"; };
+		3FB2C6A21767563100B893AE /* WellDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellDoneViewController.h; sourceTree = "<group>"; };
+		3FB2C6A31767563100B893AE /* WellDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellDoneViewController.m; sourceTree = "<group>"; };
+		3FB2C6AF17675A7C00B893AE /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
+		3FB2C6B31768996100B893AE /* wellDone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDone1.png; sourceTree = "<group>"; };
+		3FB2C6B41768996100B893AE /* wellDone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDone2.png; sourceTree = "<group>"; };
+		3FB2C6B51768996100B893AE /* wellDone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDone3.png; sourceTree = "<group>"; };
+		3FB2C6B61768996100B893AE /* wellDone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDone4.png; sourceTree = "<group>"; };
+		3FB2C6B71768996100B893AE /* wellDone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellDone5.png; sourceTree = "<group>"; };
+		3FB2C6BD176CDE9D00B893AE /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		3FB2C6BF176CE35400B893AE /* recordButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton2.png; sourceTree = "<group>"; };
+		3FB2C6C1176CE61100B893AE /* vraagtekenPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vraagtekenPopup.png; sourceTree = "<group>"; };
 		3FDCE4B317293CC500E15A6D /* chooseTaggedPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chooseTaggedPicViewController.h; sourceTree = "<group>"; };
 		3FDCE4B417293CC500E15A6D /* chooseTaggedPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseTaggedPicViewController.m; sourceTree = "<group>"; };
 		3FDCE4B6172A9B3C00E15A6D /* TagGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagGameViewController.h; sourceTree = "<group>"; };
 		3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagGameViewController.m; sourceTree = "<group>"; };
-		EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad default.png"; sourceTree = "<group>"; };
-		EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon bureaublad retina.png"; sourceTree = "<group>"; };
-		EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		EA2BD8B2171E9FC400ABEC26 /* ChildrenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChildrenViewController.h; path = ../ChildrenViewController.h; sourceTree = "<group>"; };
 		EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChildrenViewController.m; path = ../ChildrenViewController.m; sourceTree = "<group>"; };
 		EA2BD8B5171EA2A700ABEC26 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
@@ -101,20 +170,6 @@
 		EA2BD8BB171EAC7400ABEC26 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		EA2BD8BC171EAC7400ABEC26 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		EA2BD8BE171EAD0E00ABEC26 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		EA4E6C85173CF0250017EBC8 /* recordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton.png; sourceTree = "<group>"; };
-		EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButtonRec.png; sourceTree = "<group>"; };
-		EA4E6C88173CF9C90017EBC8 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
-		EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameBar.png; sourceTree = "<group>"; };
-		EA6D8CAE171F29C800395607 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
-		EA6D8CB2171F2BB600395607 /* ?buttong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "?buttong.png"; sourceTree = "<group>"; };
-		EA6D8CB4171F2CA200395607 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
-		EA6D8CB6171F2D6D00395607 /* takePicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takePicButton.png; sourceTree = "<group>"; };
-		EA6D8CB7171F2D6D00395607 /* editPicButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editPicButton.png; sourceTree = "<group>"; };
-		EA6D8CBA171F2E8400395607 /* PhotoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhotoButton.png; sourceTree = "<group>"; };
-		EA6D8CBB171F2E8400395607 /* yesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesButton.png; sourceTree = "<group>"; };
-		EA6D8CBE171F2F2D00395607 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
-		EA6D8CC0171F30F300395607 /* adultsButton .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adultsButton .png"; sourceTree = "<group>"; };
-		EA6D8CC2171F364E00395607 /* faddedBackgroud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faddedBackgroud.png; sourceTree = "<group>"; };
 		EA70251416EA08600019D97B /* Tag to Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tag to Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70251716EA08600019D97B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA70251916EA08600019D97B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,13 +198,6 @@
 		EA87B843173FA60100F95694 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EAA4B80A172159AF00635FE7 /* StartTaggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartTaggingViewController.h; sourceTree = "<group>"; };
 		EAA4B80B172159AF00635FE7 /* StartTaggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartTaggingViewController.m; sourceTree = "<group>"; };
-		EAEF5C0017204A2E001AB967 /* startTagingBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startTagingBar.png; sourceTree = "<group>"; };
-		EAEF5C0217204A36001AB967 /* no?Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no?Button.png"; sourceTree = "<group>"; };
-		EAEF5C0417204BA2001AB967 /* spellOutBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spellOutBar.png; sourceTree = "<group>"; };
-		EAEF5C0617204EED001AB967 /* choosePictureBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choosePictureBar.png; sourceTree = "<group>"; };
-		EAEF5C0717204EED001AB967 /* exitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitButton.png; sourceTree = "<group>"; };
-		EAEF5C0A17205252001AB967 /* tagGameButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tagGameButton.png; sourceTree = "<group>"; };
-		EAEF5C0B17205252001AB967 /* guessWhatButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guessWhatButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,34 +229,53 @@
 		EA2BD8A8171E997900ABEC26 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				3F51DA0F17464E670098C9ED /* choosePictures.png */,
-				3F51DA1017464E670098C9ED /* leftButton.png */,
-				3F51DA1117464E670098C9ED /* rightButton.png */,
-				EA2BD8A6171E993E00ABEC26 /* Default-Landscape@2x~ipad.png */,
-				EA6D8CB2171F2BB600395607 /* ?buttong.png */,
-				EA6D8CBA171F2E8400395607 /* PhotoButton.png */,
-				EA6D8CBB171F2E8400395607 /* yesButton.png */,
-				EAEF5C0017204A2E001AB967 /* startTagingBar.png */,
-				EAEF5C0217204A36001AB967 /* no?Button.png */,
-				EA4E6C85173CF0250017EBC8 /* recordButton.png */,
-				EAEF5C0417204BA2001AB967 /* spellOutBar.png */,
-				EAEF5C0A17205252001AB967 /* tagGameButton.png */,
-				EAEF5C0B17205252001AB967 /* guessWhatButton.png */,
-				EA6D8CAE171F29C800395607 /* playButton.png */,
-				EA6D8CC2171F364E00395607 /* faddedBackgroud.png */,
-				EA4E6C87173CF9C90017EBC8 /* playButtonRec.png */,
-				EA4E6C88173CF9C90017EBC8 /* stopButton.png */,
-				EA4E6C8B173D10BE0017EBC8 /* tagGameBar.png */,
-				EA6D8CC0171F30F300395607 /* adultsButton .png */,
-				EAEF5C0617204EED001AB967 /* choosePictureBar.png */,
-				EAEF5C0717204EED001AB967 /* exitButton.png */,
-				EA6D8CBE171F2F2D00395607 /* bar.png */,
-				EA6D8CB4171F2CA200395607 /* BackButton.png */,
-				EA2BD8A4171E987000ABEC26 /* Default-Landscape~ipad.png */,
-				EA6D8CB6171F2D6D00395607 /* takePicButton.png */,
-				EA6D8CB7171F2D6D00395607 /* editPicButton.png */,
-				EA2BD8A2171E97D200ABEC26 /* app icon bureaublad retina.png */,
-				EA2BD8A0171E973900ABEC26 /* app icon bureaublad default.png */,
+				3F9ED6531760F22A00746AE5 /* TextField.png */,
+				3F9ED607175CA92E00746AE5 /* ?buttong.png */,
+				3F9ED608175CA92E00746AE5 /* adultsButton .png */,
+				3F9ED609175CA92E00746AE5 /* againButton.png */,
+				3F9ED60A175CA92E00746AE5 /* app icon appstore default.png */,
+				3F9ED60B175CA92E00746AE5 /* app icon bureaublad default.png */,
+				3F9ED60C175CA92E00746AE5 /* app icon bureaublad retina.png */,
+				3F9ED60D175CA92E00746AE5 /* BackButton.png */,
+				3F9ED60E175CA92E00746AE5 /* bar.png */,
+				3F9ED60F175CA92E00746AE5 /* changeTagsButton.png */,
+				3F9ED610175CA92E00746AE5 /* choosePictureBar.png */,
+				3F9ED611175CA92E00746AE5 /* choosePictures.png */,
+				3F9ED612175CA92E00746AE5 /* Default-Landscape@2x~ipad.png */,
+				3F9ED613175CA92E00746AE5 /* Default-Landscape~ipad.png */,
+				3F9ED614175CA92E00746AE5 /* deleteButton.png */,
+				3F9ED615175CA92E00746AE5 /* editPicButton.png */,
+				3F9ED616175CA92E00746AE5 /* exitButton.png */,
+				3F9ED617175CA92E00746AE5 /* faddedBackgroud.png */,
+				3F9ED618175CA92E00746AE5 /* guessWhatButton.png */,
+				3F9ED619175CA92E00746AE5 /* Launch image default.png */,
+				3F9ED61A175CA92E00746AE5 /* Launch image retina.png */,
+				3F9ED61B175CA92E00746AE5 /* leftButton.png */,
+				3F9ED61C175CA92E00746AE5 /* no?Button.png */,
+				3F9ED61D175CA92E00746AE5 /* PhotoButton.png */,
+				3F9ED61E175CA92E00746AE5 /* playButton.png */,
+				3F9ED61F175CA92E00746AE5 /* playButtonRec.png */,
+				3F9ED620175CA92E00746AE5 /* playButtony.png */,
+				3F9ED621175CA92E00746AE5 /* record button.png */,
+				3F9ED622175CA92E00746AE5 /* recordButton.png */,
+				3FB2C6BF176CE35400B893AE /* recordButton2.png */,
+				3F9ED623175CA92E00746AE5 /* rightButton.png */,
+				3F9ED624175CA92E00746AE5 /* spellOutBar.png */,
+				3F9ED625175CA92E00746AE5 /* startTaggingBars.png */,
+				3F9ED626175CA92E00746AE5 /* startTagingBar.png */,
+				3F9ED627175CA92E00746AE5 /* stopButton.png */,
+				3F9ED628175CA92E00746AE5 /* tagGameBar.png */,
+				3F9ED629175CA92E00746AE5 /* tagGameButton.png */,
+				3F9ED62A175CA92E00746AE5 /* takePicButton.png */,
+				3F9ED62B175CA92E00746AE5 /* wellDonePurple.png */,
+				3FB2C6A0176755D000B893AE /* wellDonePurple_empty.png */,
+				3FB2C6B31768996100B893AE /* wellDone1.png */,
+				3FB2C6B41768996100B893AE /* wellDone2.png */,
+				3FB2C6B51768996100B893AE /* wellDone3.png */,
+				3FB2C6B61768996100B893AE /* wellDone4.png */,
+				3FB2C6B71768996100B893AE /* wellDone5.png */,
+				3FB2C6C1176CE61100B893AE /* vraagtekenPopup.png */,
+				3F9ED62C175CA92E00746AE5 /* yesButton.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -216,6 +283,8 @@
 		EA70250B16EA08600019D97B = {
 			isa = PBXGroup;
 			children = (
+				3FB2C6AF17675A7C00B893AE /* applause.wav */,
+				3FB2C6BD176CDE9D00B893AE /* wrong.wav */,
 				EA2BD8A8171E997900ABEC26 /* Images */,
 				EA70251D16EA08600019D97B /* Tag to Tap */,
 				EA70254116EA08610019D97B /* Tag to TapTests */,
@@ -268,12 +337,16 @@
 				EA2BD8B3171E9FC400ABEC26 /* ChildrenViewController.m */,
 				3FDCE4B6172A9B3C00E15A6D /* TagGameViewController.h */,
 				3FDCE4B7172A9B3D00E15A6D /* TagGameViewController.m */,
+				3F51DA15174A57230098C9ED /* GuessWhatViewController.h */,
+				3F51DA16174A57230098C9ED /* GuessWhatViewController.m */,
 				3F8EBB07171FEF3000B016AC /* StaticData.h */,
 				3F8EBB08171FEF3000B016AC /* StaticData.m */,
 				3FAB78E8171EC3420059F29C /* TaggedImage.h */,
 				3FAB78E9171EC3420059F29C /* TaggedImage.m */,
 				EA2BD8BB171EAC7400ABEC26 /* Tag.h */,
 				EA2BD8BC171EAC7400ABEC26 /* Tag.m */,
+				3FB2C6A21767563100B893AE /* WellDoneViewController.h */,
+				3FB2C6A31767563100B893AE /* WellDoneViewController.m */,
 				EA87B809173F9AB600F95694 /* Model.xcdatamodeld */,
 				EA70251E16EA08600019D97B /* Supporting Files */,
 			);
@@ -388,35 +461,56 @@
 				EA70252A16EA08600019D97B /* Default.png in Resources */,
 				EA70252C16EA08600019D97B /* Default@2x.png in Resources */,
 				EA70252E16EA08600019D97B /* Default-568h@2x.png in Resources */,
-				EA2BD8A1171E973900ABEC26 /* app icon bureaublad default.png in Resources */,
-				EA2BD8A3171E97D200ABEC26 /* app icon bureaublad retina.png in Resources */,
-				EA2BD8A5171E987000ABEC26 /* Default-Landscape~ipad.png in Resources */,
-				EA2BD8A7171E993E00ABEC26 /* Default-Landscape@2x~ipad.png in Resources */,
-				EA6D8CAF171F29C800395607 /* playButton.png in Resources */,
-				EA6D8CB3171F2BB600395607 /* ?buttong.png in Resources */,
-				EA6D8CB5171F2CA200395607 /* BackButton.png in Resources */,
-				EA6D8CB8171F2D6D00395607 /* takePicButton.png in Resources */,
-				EA6D8CB9171F2D6D00395607 /* editPicButton.png in Resources */,
-				EA6D8CBC171F2E8400395607 /* PhotoButton.png in Resources */,
-				EA6D8CBD171F2E8400395607 /* yesButton.png in Resources */,
-				EA6D8CBF171F2F2D00395607 /* bar.png in Resources */,
-				EA6D8CC1171F30F300395607 /* adultsButton .png in Resources */,
-				EA6D8CC3171F364E00395607 /* faddedBackgroud.png in Resources */,
-				EAEF5C0117204A2E001AB967 /* startTagingBar.png in Resources */,
-				EAEF5C0317204A36001AB967 /* no?Button.png in Resources */,
-				EAEF5C0517204BA2001AB967 /* spellOutBar.png in Resources */,
-				EAEF5C0817204EED001AB967 /* choosePictureBar.png in Resources */,
-				EAEF5C0917204EED001AB967 /* exitButton.png in Resources */,
-				EAEF5C0C17205253001AB967 /* tagGameButton.png in Resources */,
-				EAEF5C0D17205253001AB967 /* guessWhatButton.png in Resources */,
-				EA4E6C86173CF0250017EBC8 /* recordButton.png in Resources */,
-				EA4E6C89173CF9C90017EBC8 /* playButtonRec.png in Resources */,
-				EA4E6C8A173CF9C90017EBC8 /* stopButton.png in Resources */,
-				EA4E6C8C173D10BE0017EBC8 /* tagGameBar.png in Resources */,
 				EA87B844173FA60100F95694 /* MainStoryboard.storyboard in Resources */,
-				3F51DA1217464E680098C9ED /* choosePictures.png in Resources */,
-				3F51DA1317464E680098C9ED /* leftButton.png in Resources */,
-				3F51DA1417464E680098C9ED /* rightButton.png in Resources */,
+				3F9ED62D175CA92E00746AE5 /* ?buttong.png in Resources */,
+				3F9ED62E175CA92E00746AE5 /* adultsButton .png in Resources */,
+				3F9ED62F175CA92E00746AE5 /* againButton.png in Resources */,
+				3F9ED630175CA92E00746AE5 /* app icon appstore default.png in Resources */,
+				3F9ED631175CA92E00746AE5 /* app icon bureaublad default.png in Resources */,
+				3F9ED632175CA92E00746AE5 /* app icon bureaublad retina.png in Resources */,
+				3F9ED633175CA92E00746AE5 /* BackButton.png in Resources */,
+				3F9ED634175CA92E00746AE5 /* bar.png in Resources */,
+				3F9ED635175CA92E00746AE5 /* changeTagsButton.png in Resources */,
+				3F9ED636175CA92E00746AE5 /* choosePictureBar.png in Resources */,
+				3F9ED637175CA92E00746AE5 /* choosePictures.png in Resources */,
+				3F9ED638175CA92E00746AE5 /* Default-Landscape@2x~ipad.png in Resources */,
+				3F9ED639175CA92E00746AE5 /* Default-Landscape~ipad.png in Resources */,
+				3F9ED63A175CA92E00746AE5 /* deleteButton.png in Resources */,
+				3F9ED63B175CA92E00746AE5 /* editPicButton.png in Resources */,
+				3F9ED63C175CA92E00746AE5 /* exitButton.png in Resources */,
+				3F9ED63D175CA92E00746AE5 /* faddedBackgroud.png in Resources */,
+				3F9ED63E175CA92E00746AE5 /* guessWhatButton.png in Resources */,
+				3F9ED63F175CA92E00746AE5 /* Launch image default.png in Resources */,
+				3F9ED640175CA92E00746AE5 /* Launch image retina.png in Resources */,
+				3F9ED641175CA92E00746AE5 /* leftButton.png in Resources */,
+				3F9ED642175CA92E00746AE5 /* no?Button.png in Resources */,
+				3F9ED643175CA92E00746AE5 /* PhotoButton.png in Resources */,
+				3F9ED644175CA92E00746AE5 /* playButton.png in Resources */,
+				3F9ED645175CA92E00746AE5 /* playButtonRec.png in Resources */,
+				3F9ED646175CA92E00746AE5 /* playButtony.png in Resources */,
+				3F9ED647175CA92E00746AE5 /* record button.png in Resources */,
+				3F9ED648175CA92E00746AE5 /* recordButton.png in Resources */,
+				3F9ED649175CA92E00746AE5 /* rightButton.png in Resources */,
+				3F9ED64A175CA92E00746AE5 /* spellOutBar.png in Resources */,
+				3F9ED64B175CA92E00746AE5 /* startTaggingBars.png in Resources */,
+				3F9ED64C175CA92E00746AE5 /* startTagingBar.png in Resources */,
+				3F9ED64D175CA92E00746AE5 /* stopButton.png in Resources */,
+				3F9ED64E175CA92E00746AE5 /* tagGameBar.png in Resources */,
+				3F9ED64F175CA92E00746AE5 /* tagGameButton.png in Resources */,
+				3F9ED650175CA92E00746AE5 /* takePicButton.png in Resources */,
+				3F9ED651175CA92E00746AE5 /* wellDonePurple.png in Resources */,
+				3F9ED652175CA92E00746AE5 /* yesButton.png in Resources */,
+				3F9ED6541760F22A00746AE5 /* TextField.png in Resources */,
+				3FB2C6A1176755D000B893AE /* wellDonePurple_empty.png in Resources */,
+				3FB2C6B017675A7C00B893AE /* applause.wav in Resources */,
+				3FB2C6B81768996100B893AE /* wellDone1.png in Resources */,
+				3FB2C6B91768996100B893AE /* wellDone2.png in Resources */,
+				3FB2C6BA1768996100B893AE /* wellDone3.png in Resources */,
+				3FB2C6BB1768996100B893AE /* wellDone4.png in Resources */,
+				3FB2C6BC1768996100B893AE /* wellDone5.png in Resources */,
+				3FB2C6BE176CDE9E00B893AE /* wrong.wav in Resources */,
+				3FB2C6C0176CE35400B893AE /* recordButton2.png in Resources */,
+				3FB2C6C2176CE61100B893AE /* vraagtekenPopup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +559,8 @@
 				3FDCE4B517293CC600E15A6D /* chooseTaggedPicViewController.m in Sources */,
 				3FDCE4B8172A9B3E00E15A6D /* TagGameViewController.m in Sources */,
 				EA87B80B173F9AB600F95694 /* Model.xcdatamodeld in Sources */,
+				3F51DA17174A57240098C9ED /* GuessWhatViewController.m in Sources */,
+				3FB2C6A41767563100B893AE /* WellDoneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  StartTaggingViewController.m
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 4/19/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/19/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 
@@ -26,6 +26,10 @@
     return self;
 }
 
+/*
+ * When this viewController is the current one, the function below will be executed.
+ * Here we initiate several things like StaticData, Long-Gesture and keyboard handling.
+ */
 - (void)viewDidLoad
 {
     _dataSource = [[StaticData alloc]init];
@@ -38,7 +42,7 @@
     [self.view addGestureRecognizer:_touchListener];
     
     
-    NSLog(@"Datasource - current Tagged Image ID: %i",_dataSource.getCurrentTaggedImageID);
+    NSLog(@"Datasource - current Tagged Image ID: %i",_dataSource.getCurrentNumberOfTaggedImages);
     NSLog(@"currentTaggedImage - Image ID: %i",_taggedImage.idNumber);
     //[_dataSource saveData];
     //[_dataSource loadData];
@@ -69,6 +73,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+ * When a long-gesture is recognized by the iOS device, this function will be executed.
+ * First there is a check if the position of the gesture is within specific boundaries.
+ * Next, as long as there is a gesture the position of the shadow-button will be updated. 
+ * At last when the the gesture has ended (within boundaries) the actual Tag will be placed on screen. 
+ */
 - (IBAction)longPressDetected:(UIGestureRecognizer *)sender {
     CGPoint location = [_touchListener locationInView:self.view];
     if(location.y >= 140 && location.y <= 688){
@@ -86,7 +97,7 @@
             [self.view addSubview:newTag.stopButton];
             [self.view addSubview:newTag.deleteButton];
             [_taggedImage addTagtoArray:newTag];
-            [_dataSource addTaggedImageToArray:_taggedImage atIndex:[_dataSource getCurrentTaggedImageID]-2];
+            [_dataSource addTaggedImageToArray:_taggedImage atIndex:[_dataSource getCurrentNumberOfTaggedImages]-1];
             
         }
         else {
@@ -101,6 +112,10 @@
     }
     
 }
+
+/*
+ * Below here are keyboard-handling functions
+ */
 -(void) keyboardDidShow: (NSNotification *)notif
 {
     //NSDictionary* info = [notif userInfo];
@@ -112,9 +127,16 @@
         self.view.center = CGPointMake(50,self->originalCenter.y);
     }
 }
+
 -(void) keyboardDidHide: (NSNotification *)notif
 {
     self.view.center = self->originalCenter;
+}
+
+-(void) hideKeyboard:(id)sender
+{
+    self.view.center = self->originalCenter;
+    [self.view endEditing:YES];
 }
 
 @end

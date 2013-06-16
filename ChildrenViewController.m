@@ -2,7 +2,7 @@
 //  ChildrenViewController.m
 //  Tag to Tap
 //
-//  Created by Tony Wael Abidi on 4/17/13.
+//  Created by Tony Wael Abidi & Gert-jan Booij on 4/17/13.
 //  Copyright (c) 2013 Itopia. All rights reserved.
 //
 
@@ -25,13 +25,11 @@
 
 - (void)viewDidLoad
 {
+    _dataSource = [[StaticData alloc]init];
+    _dataSource.guessWhatGameMode = NO;
+    _dataSource.inEditMode = NO;
     [super viewDidLoad];
-    //if statment is used to check we are on a ipad or an ipad retina 
-    if ([[UIScreen mainScreen]respondsToSelector:@selector(scale)]&& [[UIScreen mainScreen]scale ]== 2.0) {
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape~ipad.png"]];
-    }else{
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-Landscape@2x~ipad.png"]];
-	}
+    [_creditsImage setAlpha:0.0];
 
 }
 
@@ -41,4 +39,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)qmarkButtonPressed:(id)sender {
+    
+    if(_creditsImage.alpha == 0)
+        [_creditsImage setAlpha:1.0];
+    else if(_creditsImage.alpha == 1.0)
+        [_creditsImage setAlpha:0.0];
+}
 @end
